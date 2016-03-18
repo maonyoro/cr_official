@@ -1,0 +1,8 @@
+*.swp
+*~
+
+public/index.html
+public/index.css
+public/index.js
+
+node_modules/
