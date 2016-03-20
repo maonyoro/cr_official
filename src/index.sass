@@ -1,0 +1,23 @@
+// media query setting
+$large: "screen and (max-width: 1350px)"
+$middle: "screen and (max-width: 991px)"
+$small: "screen and (max-width: 767px)"
+//@media #{$middle} {}
+
+@mixin debug($color)
+  border: 1px solid $color
+.debug
+  border: 1px solid red
+
+body
+  font-size: 10pt
+  font-family: -apple-system, 'Lato', ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif
+
+  #header
+    font-family: 'Lato'
+    font-size: 16pt
+    color: #000
+    font-weight: 100
+    margin-top: 20px
+    border-bottom: solid 1px #cfcfcf
+

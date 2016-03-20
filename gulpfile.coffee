@@ -11,7 +11,7 @@ gulp.task 'default', ->
 # watch
 gulp.task 'watch', ->
   gulp.watch './src/*.jade', ['jade']
-  gulp.watch './src/*.scss', ['sass']
+  gulp.watch './src/*.sass', ['sass']
   gulp.watch './src/*.coffee', ['coffee']
   gulp.src('./public').pipe(
     webserver({
@@ -23,7 +23,7 @@ gulp.task 'jade', ->
   gulp.src('./src/*.jade').pipe(jade({pretty: true})).pipe(gulp.dest('./public/'))
 
 gulp.task 'sass', ->
-  gulp.src('./src/*.scss').pipe(sass()).pipe(gulp.dest('./public/'))
+  gulp.src('./src/*.sass').pipe(sass()).pipe(gulp.dest('./public/'))
 
 gulp.task 'coffee', ->
   gulp.src('./src/*.coffee').pipe(coffee()).pipe(gulp.dest('./public/'))
