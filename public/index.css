@@ -1,0 +1,114 @@
+@charset "UTF-8";
+.debug {
+  border: 1px solid red; }
+
+.maxwidth {
+  width: 100%; }
+
+.eater {
+  font-family: 'Eater';
+  margin-right: 10px; }
+
+.menubutton {
+  margin-right: 15px;
+  margin-top: 10px;
+  font-size: 24pt;
+  opacity: 0.5; }
+
+.mobileonly {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .mobileonly {
+      display: block; } }
+
+.pconly {
+  display: block; }
+  @media screen and (max-width: 767px) {
+    .pconly {
+      display: none; } }
+
+.list-group-item {
+  background-color: #F5F5F5; }
+
+body {
+  font-size: 10pt;
+  font-family: -apple-system, 'Lato', ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif;
+  font-weight: 400; }
+  body h2 {
+    font-weight: 800;
+    font-size: 20pt;
+    letter-spacing: 0.06em;
+    margin-bottom: 50px; }
+  body #header {
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 17pt;
+    font-weight: 100;
+    z-index: 10000; }
+    body #header #pcmenu {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding-top: 20px;
+      padding-bottom: 10px; }
+      body #header #pcmenu ul {
+        list-style: none; }
+        body #header #pcmenu ul li {
+          display: inline-block;
+          margin-left: 20px;
+          margin-right: 20px; }
+    body #header #mobilemenu {
+      background-color: rgba(255, 255, 255, 0.96) !important; }
+      body #header #mobilemenu ul {
+        padding: 0;
+        list-style: none; }
+        body #header #mobilemenu ul li {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #CCC; }
+    body #header a {
+      text-decoration: none;
+      color: #000; }
+  body #info {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  body #member {
+    background-color: #FBFBFB;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100%; }
+    body #member .person {
+      margin-top: 40px; }
+      @media screen and (max-width: 767px) {
+        body #member .person {
+          padding-left: 30px;
+          padding-right: 30px; } }
+      body #member .person .mao {
+        margin-top: 150px; }
+        @media screen and (max-width: 767px) {
+          body #member .person .mao {
+            margin-top: 0; } }
+      body #member .person .yuri {
+        margin-top: 150px; }
+        @media screen and (max-width: 767px) {
+          body #member .person .yuri {
+            margin-top: 0; } }
+      body #member .person img {
+        width: 100%; }
+  body #live {
+    background-color: #FFF;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    body #live .live h4 {
+      border-bottom: 1px solid #F00;
+      padding-left: 5px;
+      color: #000; }
+  body #ticket {
+    background-color: #FBFBFB;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  body #contact {
+    background-color: #FFF;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  body #footer {
+    background-color: #FBFBFB;
+    padding-top: 10px; }
