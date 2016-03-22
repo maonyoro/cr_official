@@ -17,5 +17,6 @@ $(document).ready () ->
 
   # init animation modal
   $('#open-mobilemenu').animatedModal({
-    modalTarget: 'mobilemenu'
+    modalTarget: 'mobilemenu',
+    color: '#FFF'
   })

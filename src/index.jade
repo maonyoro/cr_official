@@ -35,8 +35,12 @@ html(lang='ja')
                 li
                   a(href="#" "data-scroll") Contact
       .mobileonly.pull-right
-        a.dropdown-toggle#open-mobilemenu(href="#mobilemenu") (+)　
+        a.dropdown-toggle#open-mobilemenu(href="#mobilemenu")
+          span.menubutton.glyphicon.glyphicon-menu-down
         #mobilemenu
+          .close
+            a.close-mobilemenu(href="#")
+              span.menubutton.glyphicon.glyphicon-remove.text-right
           ul
             li
               a.close-mobilemenu(href="#info") Information
