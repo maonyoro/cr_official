@@ -18,6 +18,8 @@ $mobile: "screen and (max-width: 767px)"
 .menubutton
   margin-right: 15px
   margin-top: 10px
+  font-size: 24pt
+  opacity: 0.5
 .mobileonly
   display: none
   @media #{$mobile}
@@ -26,6 +28,9 @@ $mobile: "screen and (max-width: 767px)"
   display: block
   @media #{$mobile}
     display: none
+.list-group-item
+  background-color: #F5F5F5
+
 
 body
   font-size: 10pt
@@ -36,6 +41,7 @@ body
     font-weight: 800
     font-size: 20pt
     letter-spacing: 0.06em
+    margin-bottom: 50px
 
   //------------------------------------
   #header
@@ -45,7 +51,7 @@ body
     font-weight: 100
     z-index: 10000
     #pcmenu
-      background-color: #FFF
+      background-color: rgba(255,255,255,0.95)
       padding-top: 20px
       padding-bottom: 10px
       //border-bottom: dashed 1px #cfcfcf
@@ -56,8 +62,9 @@ body
           margin-left: 20px
           margin-right: 20px
     #mobilemenu
-      background-color: rgba(0,0,0,0)
+      background-color: rgba(255,255,255,0.96) !important
       ul
+        padding: 0
         list-style: none
         li
           padding-top: 20px
@@ -78,7 +85,7 @@ body
 
   //------------------------------------
   #member
-    background-color: #FFCFCF
+    background-color: #FBFBFB
     padding-top: 100px
     padding-bottom: 100px
     height: 100%
@@ -101,5 +108,31 @@ body
         width: 100%
 
   #live
-    background-color: #F0F0F0
+    background-color: #FFF
     padding-top: 100px
+    padding-bottom: 100px
+    .live
+      h4
+        border-bottom: 1px solid #F00
+        padding-left: 5px
+        color: #000
+
+
+  //------------------------------------
+  #ticket
+    background-color: #FBFBFB
+    padding-top: 100px
+    padding-bottom: 100px
+
+
+  //------------------------------------
+  #contact
+    background-color: #FFF
+    padding-top: 100px
+    padding-bottom: 100px
+
+
+  //------------------------------------
+  #footer
+    background-color: #FBFBFB
+    padding-top: 10px

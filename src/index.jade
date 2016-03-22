@@ -2,13 +2,13 @@ doctype html
 html(lang='ja')
   head
     meta(charset='utf-8')
-    //meta(name='viewport' content='width=device-width, shrink-to-fit=yes')
+    meta(name='viewport' content='width=device-width, shrink-to-fit=yes')
     title CRUEL REASON Official Website
     // library
     link(rel='stylesheet' href='lib/bootstrap-3.3.6-dist/css/bootstrap.min.css')
     link(rel='stylesheet' href='lib/animate.css')
     script(type='text/javascript' src='lib/jquery-1.12.2.min.js')
-    // 自前ソースは最後に読み込む
+    //-- 自前ソースは最後に読み込む
     link(rel='stylesheet' href='./index.css')
     // web fonts
     link(href='https://fonts.googleapis.com/css?family=Codystar:400,300' rel='stylesheet' type='text/css')
@@ -16,6 +16,7 @@ html(lang='ja')
     link(href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet' type='text/css')
 
   body
+    //------------------------------------
     #header
       #pcmenu.pconly
         .container
@@ -38,23 +39,22 @@ html(lang='ja')
         a.dropdown-toggle#open-mobilemenu(href="#mobilemenu")
           span.menubutton.glyphicon.glyphicon-menu-down
         #mobilemenu
-          .close
+          #closebutton.text-right
             a.close-mobilemenu(href="#")
-              span.menubutton.glyphicon.glyphicon-remove.text-right
+              span.menubutton.glyphicon.glyphicon-remove-circle
           ul
-            li
-              a.close-mobilemenu(href="#info") Information
-            li
-              a.close-mobilemenu(href="#member") Member
-            li
-              a.close-mobilemenu(href="#live") Live Schedule
-            li
-              a.close-mobilemenu(href="#") Ticket
-            //li
-            //  a.close-mobilemenu(href="#") Discography
-            li
-              a.close-mobilemenu(href="#") Contact
+            a.close-mobilemenu(href="#info")
+              li Information
+            a.close-mobilemenu(href="#member")
+              li Member
+            a.close-mobilemenu(href="#live")
+              li Live Schedule
+            a.close-mobilemenu(href="#")
+              li Ticket
+            a.close-mobilemenu(href="#")
+              li Contact
 
+    //------------------------------------
     #contents
       .photoview
         img.maxwidth(src="http://placehold.jp/1280x720.png")
@@ -63,6 +63,7 @@ html(lang='ja')
           .col-md-12
 
 
+    //------------------------------------
     #info
       .container
         .row
@@ -70,6 +71,7 @@ html(lang='ja')
             h2.text-center Information
 
 
+    //------------------------------------
     #member
       .container
         .row
@@ -94,35 +96,125 @@ html(lang='ja')
               h3.eater.text-right Drums. yuri
               img.pull-right(src="http://placehold.jp/320x480.png")
 
+    //------------------------------------
     #live
       .container
         .row
           .col-md-12
             h2.text-center Live Schedule
-        .row
-          .col-md-3
-            .card
-              img.card-img-top(data-src="http://placehold.jp/320x240.png" alt="foobar")
-              .card-block
-                h4.card-title タイトル
-                p.card-text ここにテキストがこのように入りますここにテキストがこのように入ります
 
+        .row
+          .col-md-4
+            .live.panel.panel-default
+              .panel-heading
+                a.list-group-item(href="#liveinfo01" data-toggle="collapse" style="border:0")
+                  | 4/2 浦和ナルシス
+                  br
+                  | 『～漆黒のシンフォニー～』
+                  span.caret
+              #liveinfo01.collapse.panel-body
+                h4 時間
+                p OPEN 16:30  START 17:00(予定)
+                h4 チケット
+                p 前売 3000円  当日 3500円 (Drink代別 500円)
+                p チケット引き換え16:00～予定
+                h4 出演
+                p プロジェクトファンタズマ / ベティ / Dear / マルコ / ROMiO. / gezigezi / …and more
+
+          .col-md-4
+            .live.panel.panel-default
+              .panel-heading
+                a.list-group-item(href="#liveinfo02" data-toggle="collapse" style="border:0")
+                  | 4/20 浦和ナルシス
+                  br
+                  | 『Give off NEW BRIGHTNESS-CRUEL REASON始動-』
+                  span.caret
+              #liveinfo02.collapse.panel-body
+                h4 時間
+                p OPEN 18:00  START 18:30(予定)
+                h4 チケット
+                p 前売 3000円  当日 3500円 (Drink代別 500円)
+                p チケット引き換え16:30～予定
+                h4 出演
+                p coming soon.
+
+          .col-md-4
+            .live.panel.panel-default
+              .panel-heading
+                a.list-group-item(href="#liveinfo03" data-toggle="collapse" style="border:0")
+                  | 5/4 浦和ナルシス
+                  br
+                  | 『Give off NEW BRIGHTNESS-CRUEL REASON mao Birthday-』
+                  span.caret
+              #liveinfo03.collapse.panel-body
+                h4 時間
+                p 未定
+                //h4 チケット
+                //p 前売 3000円  当日 3500円 (Drink代別 500円)
+                //p チケット引き換え16:30～予定
+                //h4 出演
+                //p coming soon.
+
+        .row
+          .col-md-4
+            .live.panel.panel-default
+              .panel-heading
+                a.list-group-item(href="#liveinfo04" data-toggle="collapse" style="border:0")
+                  | 5/31 浦和ナルシス
+                  br
+                  | CRUEL REASON始動記念無料Oneman Live『我、此処ニ狂エリ。』
+                  span.caret
+              #liveinfo04.collapse.panel-body
+                h4 時間
+                p OPEN 18:30  START 19:00
+                h4 チケット
+                p 前売 0円  当日 0円 (2Drink 1000円)
+
+          .col-md-4
+            .live.panel.panel-default
+              .panel-heading
+                a.list-group-item(href="#liveinfo05" data-toggle="collapse" style="border:0")
+                  | 6/5 浦和ナルシス
+                  br
+                  | Z.M.F. PRESENTS 『ジェナイト祭り!!』
+                  span.caret
+              #liveinfo05.collapse.panel-body
+                h4 時間
+                p OPEN 15:30  START 16:00
+                h4 チケット
+                p 前売 3000円  当日 3500円 (Drink代別 500円)
+                p チケット引き換え 15:00〜 予定
+                p チケット発売 4/24(日) 15:00 浦和Narciss店頭販売(No.1〜シャッフル販売) / バンド予約あり
+                h4 出演
+                p CRUEL REASON / [evber]brain / DANGER☆GANG / ROMiO. / RF / しょけけ(From RagEnd) / トシ(From RagEnd) / >希(From RagEnd) / ツトム(From 諦) / 秀虎(From G.O.ZⅦ/諦) / レイト(From G.O.ZⅦ/諦) / …and more
+
+
+    //------------------------------------
     #ticket
       .container
         .row
-          p aiueo
+          .col-md-12
+            h2.text-center Reservation
 
+    //------------------------------------
     #contact
       .container
         .row
+          .col-md-12
+            h2.text-center Contact
 
+    //------------------------------------
     #footer
+      .container
+        .row
+          .col-md-12
+            p.text-right &copy;Copyright 2016 CRUEL REASON All rights reserved.
 
     script(type='text/javascript' src='lib/bootstrap-3.3.6-dist/js/bootstrap.min.js')
     script(type='text/javascript' src='lib/smooth-scroll-master/dist/js/smooth-scroll.min.js')
-    // ライブラリ側1行変更コメントアウトしてます
+    //-- ライブラリ側1行変更コメントアウトしてます
     script(type='text/javascript' src='lib/animatedModal.js-master/animatedModal.js')
-    // todo sticky-headerどっちか使ってどっちか消す↓
+    //-- todo sticky-headerどっちか使ってどっちか消す↓
     script(type='text/javascript' src='lib/garand-sticky-9434b1f/jquery.sticky.js')
     script(type='text/javascript' src='lib/sticky-kit.min.js')
     script(type='text/javascript' src='./index.js')

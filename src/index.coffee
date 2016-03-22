@@ -18,5 +18,8 @@ $(document).ready () ->
   # init animation modal
   $('#open-mobilemenu').animatedModal({
     modalTarget: 'mobilemenu',
-    color: '#FFF'
+    color: '#FFF',
+    animatedIn: 'bounceInDown',
+    animatedOut: 'bounceOutUp',
+    animationDuration: '.3s'
   })
