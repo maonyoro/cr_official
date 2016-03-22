@@ -12,4 +12,10 @@ $(document).ready () ->
   #})
 
   smoothScroll.init(
+    offset: 70
   )
+
+  # init animation modal
+  $('#open-mobilemenu').animatedModal({
+    modalTarget: 'mobilemenu'
+  })

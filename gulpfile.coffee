@@ -10,11 +10,13 @@ gulp.task 'default', ->
 
 # watch
 gulp.task 'watch', ->
+  gulp.run('jade','sass','coffee')
   gulp.watch './src/*.jade', ['jade']
   gulp.watch './src/*.sass', ['sass']
   gulp.watch './src/*.coffee', ['coffee']
   gulp.src('./public').pipe(
     webserver({
+      host: "0.0.0.0",
       livereload: true
     })
   )
