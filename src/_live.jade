@@ -1,3 +1,25 @@
+//- define mixin
+mixin live(num, date, place, title, time, ticket, band)
+  .row
+    .col-md-4
+      .live.panel.panel-default
+        .panel-heading
+          a.list-group-item(href="#liveinfo#{num}" data-toggle="collapse" style="border:0")
+            | #{date}
+            | #{place}
+            br
+            | 『#{title}』
+            span.caret
+        .collapse.panel-body(id="liveinfo#{num}")
+          h4 時間
+          p #{time}
+          h4 チケット
+          p #{ticket}
+          h4 出演
+          p #{band}
+
++live('10','1/1','urawa','titletitle','oufoua','ticketdetail','coming soon')
+
 .row
   .col-md-4
     .live.panel.panel-default
