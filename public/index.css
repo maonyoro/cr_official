@@ -70,6 +70,10 @@ body {
   body #info {
     padding-top: 100px;
     padding-bottom: 100px; }
+  body #movie {
+    background-color: #FBFBFB;
+    padding-top: 100px;
+    padding-bottom: 100px; }
   body #member {
     background-color: #FBFBFB;
     padding-top: 100px;
@@ -97,10 +101,22 @@ body {
     background-color: #FFF;
     padding-top: 100px;
     padding-bottom: 100px; }
-    body #live .live h4 {
-      border-bottom: 1px solid #F00;
-      padding-left: 5px;
-      color: #000; }
+    body #live .live {
+      font-family: ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif; }
+      body #live .live h4 {
+        padding-left: 5px;
+        color: #000; }
+      body #live .live .date {
+        color: #F030A0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14pt;
+        font-weight: 900;
+        letter-spacing: 0.12em;
+        font-family: 'Merriweather'; }
+      body #live .live .title {
+        font-size: 13pt;
+        font-family: 'Eater', serif; }
   body #ticket {
     background-color: #FBFBFB;
     padding-top: 100px;

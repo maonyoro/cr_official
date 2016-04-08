@@ -11,9 +11,10 @@ html(lang='ja')
     //-- 自前ソースは最後に読み込む
     link(rel='stylesheet' href='./index.css')
     // web fonts
-    link(href='https://fonts.googleapis.com/css?family=Codystar:400,300' rel='stylesheet' type='text/css')
+    //link(href='https://fonts.googleapis.com/css?family=Codystar:400,300' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:900' rel='stylesheet' type='text/css')
 
   body
 
@@ -55,7 +56,6 @@ html(lang='ja')
             a.close-mobilemenu(href="#contact")
               li Contact
 
-
     //------------------------------------
     // Contents
     //------------------------------------
@@ -66,6 +66,15 @@ html(lang='ja')
         .row
           .col-md-12
 
+
+    //------------------------------------
+    // Movie
+    //------------------------------------
+    #movie
+      .container
+        .row
+          .col-md-12
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/GgZgLddpy3I?rel=0" frameborder="0" allowfullscreen style="width:100%")
 
     //------------------------------------
     // Informatin
@@ -124,6 +133,11 @@ html(lang='ja')
         .row
           .col-md-12
             h2.text-center Reservation
+            p.text-center チケットのご予約はこちら
+        .row
+          .col-md-8.col-md-offset-2
+            .form-wrapper("marginbot-50" style="padding: 0")
+              script(type="text/javascript" src="https://form.jotform.me/jsform/60470680579463")
 
 
     //------------------------------------
@@ -134,6 +148,11 @@ html(lang='ja')
         .row
           .col-md-12
             h2.text-center Contact
+            p.text-center お問い合わせは
+              a(href="https://form.jotform.me/60530173636451" target="_blank") こちら
+              | まで
+              br
+              | (別Windowが開きます)
 
 
     //------------------------------------
