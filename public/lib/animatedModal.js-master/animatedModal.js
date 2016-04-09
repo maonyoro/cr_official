@@ -91,8 +91,7 @@
 
 
         closeBt.click(function(event) {
-            // changed by mao!
-            //event.preventDefault();
+            event.preventDefault();
             $('body, html').css({'overflow':'auto'});
 
             settings.beforeClose(); //beforeClose
