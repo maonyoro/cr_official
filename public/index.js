@@ -21,12 +21,6 @@
     $('#gnavi a').on('click', function() {
       return $('button.navbar-toggle').click();
     });
-    $('button #checkButton').on('click', function() {
-      console.log("c");
-      return $('body').animate({
-        scrollTop: $('#ticket').offset().top
-      });
-    });
     $('.slider').slick({
       dots: true,
       infinite: true,

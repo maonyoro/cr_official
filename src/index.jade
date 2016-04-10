@@ -13,7 +13,6 @@ html(lang='ja')
     //-- 自前ソースは最後に読み込む
     link(rel='stylesheet' href='./index.css')
     // web fonts
-    //link(href='https://fonts.googleapis.com/css?family=Codystar:400,300' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Merriweather:900' rel='stylesheet' type='text/css')
@@ -91,21 +90,72 @@ html(lang='ja')
         .row
           .person.col-md-5
             .hideto
-              h3.eater Vocal. hideto
-              img(src="./img/201604/hideto.jpg")
+              a(href="#hideto-profile" data-toggle="modal" data-target="#hideto-profile")
+                h3.eater Vocal. hideto
+                img(src="./img/201604/hideto.jpg")
+              #hideto-profile.profile.modal.fade(role="dialog")
+                .modal-dialog(role="document")
+                  .modal-content
+                    .modal-body
+                      h4 Name
+                      p 英人
+                      h4 Part
+                      p Vocal
+                      h4 Birthday
+                      p 3/9
+                      a(href="https://twitter.com/gigahideto" target="_blank") Twitter
+
           .person.col-md-5.col-md-offset-2
             .mao
-              h3.eater.text-right Guitar. mao
-              img.pull-right(src="./img/201604/mao.jpg")
+              a(href="#mao-profile" data-toggle="modal" data-target="#mao-profile")
+                h3.eater.text-right Guitar. mao
+                img.pull-right(src="./img/201604/mao.jpg")
+              #mao-profile.profile.modal.fade(role="dialog")
+                .modal-dialog(role="document")
+                  .modal-content
+                    .modal-body
+                      h4 Name
+                      p mao
+                      h4 Part
+                      p Guitar
+                      h4 Birthday
+                      p 5/4
+                      a(href="https://twitter.com/maonyoro" target="_blank") Twitter
+
         .row
           .person.col-md-5
             .utamaru
-              h3.eater Bass. utamaru
-              img(src="./img/201604/utamaru.jpg")
+              a(href="#utamaru-profile" data-toggle="modal" data-target="#utamaru-profile")
+                h3.eater Bass. utamaru
+                img(src="./img/201604/utamaru.jpg")
+              #utamaru-profile.profile.modal.fade(role="dialog")
+                .modal-dialog(role="document")
+                  .modal-content
+                    .modal-body
+                      h4 Name
+                      p うたまる
+                      h4 Part
+                      p Bass
+                      h4 Birthday
+                      p 7/
+                      a(href="https://twitter.com/cruel_utamaru" target="_blank") Twitter
+
           .person.col-md-5.col-md-offset-2
             .yuri
-              h3.eater.text-right Drums. yuri
-              img.pull-right(src="./img/201604/yuri.jpg")
+              a(href="#yuri-profile" data-toggle="modal" data-target="#yuri-profile")
+                h3.eater.text-right Drums. yuri
+                img.pull-right(src="./img/201604/yuri.jpg")
+              #yuri-profile.profile.modal.fade(role="dialog")
+                .modal-dialog(role="document")
+                  .modal-content
+                    .modal-body
+                      h4 Name
+                      p yuri
+                      h4 Part
+                      p Drums
+                      h4 Birthday
+                      p 2/13
+                      a(href="https://twitter.com/tesroayuri" target="_blank") Twitter
 
 
     //------------------------------------
@@ -129,6 +179,7 @@ html(lang='ja')
             h2.text-center Ticket Reservation
             a(href="https://form.jotform.me/60470680579463" target="_blank")
               p.text-center チケットのご予約はこちら
+            p.text-center (別Windowが開きます)
         //.row
         //  .col-md-8.col-md-offset-2
         //    .form-wrapper("marginbot-50" style="padding: 0")
@@ -143,11 +194,9 @@ html(lang='ja')
         .row
           .col-md-12
             h2.text-center Contact
-            p.text-center お問い合わせは
-              a(href="https://form.jotform.me/60530173636451" target="_blank") こちら
-              | まで
-              br
-              | (別Windowが開きます)
+            a(href="https://form.jotform.me/60530173636451" target="_blank")
+              p.text-center お問い合わせはこちら
+            p.text-center (別Windowが開きます)
 
 
     //------------------------------------
@@ -170,4 +219,5 @@ html(lang='ja')
     script(type='text/javascript' src='lib/garand-sticky-9434b1f/jquery.sticky.js')
     script(type='text/javascript' src='lib/sticky-kit.min.js')
     script(type='text/javascript' src='lib/slick-1.5.9/slick/slick.min.js')
+    //script(type="text/javascript" src='lib/bootstrap-modal-master/js/bootstrap-modal.js')
     script(type='text/javascript' src='./index.js')

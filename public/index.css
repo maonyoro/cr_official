@@ -46,6 +46,18 @@
 .navbar-toggle {
   margin-right: 0; }
 
+.modal-body {
+  background-color: rgba(0, 0, 0, 0.95);
+  font-family: 'Lato';
+  font-weight: 400; }
+  .modal-body h4 {
+    font-family: 'Eater', serif;
+    font-size: 12pt;
+    color: red; }
+  .modal-body p {
+    color: #FFF;
+    padding-left: 10px; }
+
 html {
   overflow: auto; }
 
@@ -115,6 +127,11 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
     height: 100%; }
+    body #member a {
+      color: red; }
+    body #member .profile {
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #000; }
     body #member .person {
       margin-top: 40px; }
       @media screen and (max-width: 767px) {

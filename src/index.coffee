@@ -30,13 +30,6 @@ $(document).ready () ->
   #  offset_top: -50
   #})
 
-  # for jotform
-  $('button #checkButton').on 'click', ->
-    console.log "c"
-    $('body').animate({
-      scrollTop: $('#ticket').offset().top
-    })
-
   $('.slider').slick({
     dots: true,
     infinite: true,
