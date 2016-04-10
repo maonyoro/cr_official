@@ -1,15 +1,41 @@
+$(window).scroll ->
+  if $(@).scrollTop() > 100
+    $('.menubutton').fadeIn()
+  else
+    $('.menubutton').fadeOut()
+
+
 $(document).ready () ->
 
   #  $('.menu-onigiri').hover(
   #    -> $(@).attr 'src', "image/menu_onigiri_on.png"
   #    -> $(@).attr 'src', "image/menu_onigiri.png"
   #  )
-  $('#header').sticky({
-    topSpacing: 0,
-  })
+  $('button.navbar-toggle').on 'click', ->
+    $('.navbar-header').toggleClass('menuisactive')
+    if $('.menubutton').hasClass('glyphicon-menu-down')
+      $('.menubutton').addClass('glyphicon-remove-circle')
+      $('.menubutton').removeClass('glyphicon-menu-down')
+    else
+      $('.menubutton').addClass('glyphicon-menu-down')
+      $('.menubutton').removeClass('glyphicon-remove-circle')
+
+  $('#gnavi a').on 'click', ->
+    $('button.navbar-toggle').click()
+
+  #$('#header').sticky({
+  #  topSpacing: 0,
+  #})
   #$('#header').stick_in_parent({
   #  offset_top: -50
   #})
+
+  # for jotform
+  $('button #checkButton').on 'click', ->
+    console.log "c"
+    $('body').animate({
+      scrollTop: $('#ticket').offset().top
+    })
 
   $('.slider').slick({
     dots: true,

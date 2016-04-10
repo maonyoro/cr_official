@@ -13,7 +13,7 @@
   margin-right: 15px;
   margin-top: 10px;
   font-size: 24pt;
-  opacity: 0.5; }
+  opacity: 0.6; }
 
 .mobileonly {
   display: none; }
@@ -30,11 +30,28 @@
 .list-group-item {
   background-color: #F5F5F5; }
 
+.menuisactive {
+  background-color: rgba(255, 255, 255, 0.95) !important; }
+
+.menubutton {
+  display: none; }
+
+.navbar {
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0); }
+
+.navbar-nav {
+  float: right; }
+
+.navbar-toggle {
+  margin-right: 0; }
+
 html {
   overflow: auto; }
 
 body {
-  overflow: auto;
+  background-color: #000;
+  overflow: hidden;
   font-size: 10pt;
   font-family: -apple-system, 'Lato', ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif;
   font-weight: 400; }
@@ -43,22 +60,38 @@ body {
     font-size: 20pt;
     letter-spacing: 0.06em;
     margin-bottom: 50px; }
+  body #cruelreasonofficialwebsite {
+    background-color: #FFF;
+    font-family: 'Lato';
+    font-size: 15pt;
+    font-weight: 300;
+    padding: 10px 5px 5px 10px; }
   body #header {
+    margin-top: 40px;
     text-align: center;
     font-family: 'Lato';
     font-size: 17pt;
     font-weight: 300;
-    z-index: 10000; }
-    body #header #pcmenu {
-      background-color: rgba(255, 255, 255, 0.95);
-      padding-top: 20px;
-      padding-bottom: 10px; }
-      body #header #pcmenu ul {
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 10000;
+    padding-top: 20px;
+    padding-bottom: 10px; }
+    body #header #gnavi {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.4) 0%, #FFF 100%); }
+    body #header a {
+      text-decoration: none;
+      color: #000; }
+      body #header a ul {
         list-style: none; }
-        body #header #pcmenu ul li {
+        body #header a ul li {
           display: inline-block;
           margin-left: 20px;
           margin-right: 20px; }
+    @media screen and (max-width: 767px) {
+      body #header {
+        position: fixed;
+        width: 100%;
+        padding: 0; } }
   body #mobileheader {
     margin-top: 10px;
     font-family: 'Lato';
@@ -72,11 +105,14 @@ body {
     margin-left: auto;
     margin-right: auto; }
   body #movie {
-    background-color: #FBFBFB;
+    background-image: url("./img/bg01.jpg");
+    background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px; }
   body #member {
-    background-color: #FBFBFB;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.95);
+    padding-top: 100px;
     padding-bottom: 100px;
     height: 100%; }
     body #member .person {

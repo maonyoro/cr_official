@@ -2,13 +2,13 @@ doctype html
 html(lang='ja')
   head
     meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width, shrink-to-fit=yes')
+    meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=yes')
     title CRUEL REASON Official Website
     // library
     link(rel='stylesheet' href='lib/bootstrap-3.3.6-dist/css/bootstrap.min.css')
-    link(rel='stylesheet' href='lib/animate.css')
     link(rel='stylesheet' href='lib/slick-1.5.9/slick/slick.css')
     link(rel='stylesheet' href='lib/slick-1.5.9/slick/slick-theme.css')
+    link(rel='stylesheet' href='lib/animate.css')
     script(type='text/javascript' src='lib/jquery-1.12.2.min.js')
     //-- 自前ソースは最後に読み込む
     link(rel='stylesheet' href='./index.css')
@@ -20,46 +20,32 @@ html(lang='ja')
 
   body
 
+    #cruelreasonofficialwebsite
+      p CRUEL REASON Official Website
 
     //------------------------------------
     // Header
     //------------------------------------
     #header
-      #pcmenu.pconly
-        .container
-          .row
-            .col-md-10.col-md-offset-1
-              ul
-                li
-                  a(href="#info" "data-scroll") Information
-                li
-                  a(href="#member" "data-scroll") Member
-                li
-                  a(href="#live" "data-scroll") Live Schedule
-                li
-                  a(href="#ticket" "data-scroll") Ticket
-                li
-                  a(href="#contact" "data-scroll") Contact
-    #mobileheader.mobileonly.text-center
-      p CRUEL REASON Official Website
-      //.mobileonly.pull-right
-      //  a.dropdown-toggle#open-mobilemenu(href="#mobilemenu")
-      //    span.menubutton.glyphicon.glyphicon-menu-down
-      //  #mobilemenu
-      //    #closebutton.text-right
-      //      a.close-mobilemenu(href="#")
-      //        span.menubutton.glyphicon.glyphicon-remove-circle
-      //    ul
-      //      a.close-mobilemenu(href="#info")
-      //        li Information
-      //      a.close-mobilemenu(href="#member")
-      //        li Member
-      //      a.close-mobilemenu(href="#live")
-      //        li Live Schedule
-      //      a.close-mobilemenu(href="#ticket")
-      //        li Ticket
-      //      a.close-mobilemenu(href="#contact")
-      //        li Contact
+      .container
+        .row
+          .col-md-12
+            .navbar.navbar-fixed-top
+              .navbar-header
+                button.navbar-toggle(type='button' data-toggle='collapse' data-target='#gnavi')
+                  span.menubutton.glyphicon.glyphicon-menu-down
+              #gnavi.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                  li
+                    a(href="#" "data-scroll") Top
+                  li
+                    a(href="#member" "data-scroll") Member
+                  li
+                    a(href="#live" "data-scroll") Live Schedule
+                  li
+                    a(href="#ticket" "data-scroll") Ticket
+                  li
+                    a(href="#contact" "data-scroll") Contact
 
     //------------------------------------
     // Contents
@@ -140,12 +126,13 @@ html(lang='ja')
       .container
         .row
           .col-md-12
-            h2.text-center Reservation
-            p.text-center チケットのご予約はこちらから
-        .row
-          .col-md-8.col-md-offset-2
-            .form-wrapper("marginbot-50" style="padding: 0")
-              script(type="text/javascript" src="https://form.jotform.me/jsform/60470680579463")
+            h2.text-center Ticket Reservation
+            a(href="https://form.jotform.me/60470680579463" target="_blank")
+              p.text-center チケットのご予約はこちら
+        //.row
+        //  .col-md-8.col-md-offset-2
+        //    .form-wrapper("marginbot-50" style="padding: 0")
+        //      script(type="text/javascript" src="https://form.jotform.me/jsform/60470680579463")
 
 
     //------------------------------------
@@ -178,7 +165,7 @@ html(lang='ja')
     //------------------------------------
     script(type='text/javascript' src='lib/bootstrap-3.3.6-dist/js/bootstrap.min.js')
     script(type='text/javascript' src='lib/smooth-scroll-master/dist/js/smooth-scroll.min.js')
-    //-- script(type='text/javascript' src='lib/animatedModal.js-master/animatedModal.min.js')
+    script(type='text/javascript' src='lib/animatedModal.js-master/animatedModal.min.js')
     //-- todo sticky-headerどっちか使ってどっちか消す↓
     script(type='text/javascript' src='lib/garand-sticky-9434b1f/jquery.sticky.js')
     script(type='text/javascript' src='lib/sticky-kit.min.js')
