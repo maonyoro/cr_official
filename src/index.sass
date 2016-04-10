@@ -42,7 +42,12 @@ $mobile: "screen and (max-width: 767px)"
   margin-bottom: 0
   background-color: rgba(255,255,255,0)
 .navbar-nav
+  margin-right: 15px
+  margin-top: 2px
   float: right
+  @media #{$mobile}
+    margin: 0
+    float: none
 .navbar-toggle
   margin-right: 0
 .modal-body
@@ -61,7 +66,11 @@ html
   overflow: auto
 
 body
-  //background-color: #000
+  background-image: url("./img/bg02.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-attachment: fixed
+  opacity: 0.94
   overflow: hidden
   font-size: 10pt
   font-family: -apple-system, 'Lato', ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif
@@ -79,14 +88,14 @@ body
     font-family: 'Lato'
     font-weight: 300
     font-size: 28pt
-    padding: 10px 5px 5px 30px
+    padding: 5px 5px 5px 30px
+    color: #000
     @media #{$mobile}
       font-size: 15pt
       padding: 10px 5px 5px 10px
 
   //------------------------------------
   #header
-    margin-top: 40px
     text-align: center
     font-family: 'Lato'
     font-size: 17pt
@@ -97,6 +106,8 @@ body
     padding-bottom: 10px
     #gnavi
       background: linear-gradient(to right, rgba(255,255,255,0.4) 0%, #FFF 100%)
+      @media #{$mobile}
+        background-color: rgba(255,255,255,0.8)
     a
       text-decoration: none
       color: #000
@@ -128,13 +139,13 @@ body
   #contents
     .photoview
       max-width: 1280px
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: auto
+      margin-right: auto
 
   //------------------------------------
   #movie
     background-image: url("./img/bg01.jpg")
-    background-size: cover;
+    background-size: cover
     padding-top: 100px
     padding-bottom: 100px
 
@@ -145,8 +156,7 @@ body
     .profile
       background-color: rgba(0,0,0,0.3)
       color: #000
-    //background-color: #FBFBFB
-    background-color: rgba(0,0,0,0.9)
+    background-color: rgba(0,0,0,0.8)
     color: rgba(255,255,255,0.95)
     padding-top: 100px
     padding-bottom: 100px
@@ -170,7 +180,7 @@ body
         width: 100%
 
   #live
-    background-color: #FFF
+    background-color: rgba(255,255,255,0.96)
     padding-top: 100px
     padding-bottom: 100px
     .live
@@ -193,19 +203,21 @@ body
 
   //------------------------------------
   #ticket
-    background-color: #FBFBFB
+    background-color: rgba(128,128,128,0.96)
     padding-top: 100px
     padding-bottom: 100px
+    a
+      color: red
 
 
   //------------------------------------
   #contact
-    background-color: #FFF
+    background-color: rgba(255,255,255,0.96)
     padding-top: 100px
     padding-bottom: 100px
 
 
   //------------------------------------
   #footer
-    background-color: #FBFBFB
+    background-color: #FFFFFF
     padding-top: 10px

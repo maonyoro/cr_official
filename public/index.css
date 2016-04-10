@@ -41,7 +41,13 @@
   background-color: rgba(255, 255, 255, 0); }
 
 .navbar-nav {
+  margin-right: 15px;
+  margin-top: 2px;
   float: right; }
+  @media screen and (max-width: 767px) {
+    .navbar-nav {
+      margin: 0;
+      float: none; } }
 
 .navbar-toggle {
   margin-right: 0; }
@@ -62,6 +68,11 @@ html {
   overflow: auto; }
 
 body {
+  background-image: url("./img/bg02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.94;
   overflow: hidden;
   font-size: 10pt;
   font-family: -apple-system, 'Lato', ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif;
@@ -76,13 +87,13 @@ body {
     font-family: 'Lato';
     font-weight: 300;
     font-size: 28pt;
-    padding: 10px 5px 5px 30px; }
+    padding: 5px 5px 5px 30px;
+    color: #000; }
     @media screen and (max-width: 767px) {
       body #cruelreasonofficialwebsite {
         font-size: 15pt;
         padding: 10px 5px 5px 10px; } }
   body #header {
-    margin-top: 40px;
     text-align: center;
     font-family: 'Lato';
     font-size: 17pt;
@@ -93,6 +104,9 @@ body {
     padding-bottom: 10px; }
     body #header #gnavi {
       background: linear-gradient(to right, rgba(255, 255, 255, 0.4) 0%, #FFF 100%); }
+      @media screen and (max-width: 767px) {
+        body #header #gnavi {
+          background-color: rgba(255, 255, 255, 0.8); } }
     body #header a {
       text-decoration: none;
       color: #000; }
@@ -125,7 +139,7 @@ body {
     padding-top: 100px;
     padding-bottom: 100px; }
   body #member {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     color: rgba(255, 255, 255, 0.95);
     padding-top: 100px;
     padding-bottom: 100px;
@@ -154,7 +168,7 @@ body {
       body #member .person img {
         width: 100%; }
   body #live {
-    background-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.96);
     padding-top: 100px;
     padding-bottom: 100px; }
     body #live .live {
@@ -174,13 +188,15 @@ body {
         font-size: 13pt;
         font-family: 'Eater', serif; }
   body #ticket {
-    background-color: #FBFBFB;
+    background-color: rgba(128, 128, 128, 0.96);
     padding-top: 100px;
     padding-bottom: 100px; }
+    body #ticket a {
+      color: red; }
   body #contact {
-    background-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.96);
     padding-top: 100px;
     padding-bottom: 100px; }
   body #footer {
-    background-color: #FBFBFB;
+    background-color: #FFFFFF;
     padding-top: 10px; }
