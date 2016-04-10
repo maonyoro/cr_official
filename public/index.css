@@ -62,7 +62,6 @@ html {
   overflow: auto; }
 
 body {
-  background-color: #000;
   overflow: hidden;
   font-size: 10pt;
   font-family: -apple-system, 'Lato', ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif;
@@ -75,9 +74,13 @@ body {
   body #cruelreasonofficialwebsite {
     background-color: #FFF;
     font-family: 'Lato';
-    font-size: 15pt;
     font-weight: 300;
-    padding: 10px 5px 5px 10px; }
+    font-size: 28pt;
+    padding: 10px 5px 5px 30px; }
+    @media screen and (max-width: 767px) {
+      body #cruelreasonofficialwebsite {
+        font-size: 15pt;
+        padding: 10px 5px 5px 10px; } }
   body #header {
     margin-top: 40px;
     text-align: center;
