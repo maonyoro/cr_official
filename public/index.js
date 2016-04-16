@@ -1,9 +1,11 @@
 (function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      return $('.menubutton').fadeIn();
+      $('.menubutton').fadeIn();
+      return $('.menubody').fadeIn();
     } else {
-      return $('.menubutton').fadeOut();
+      $('.menubutton').fadeOut();
+      return $('.menubody').fadeOut();
     }
   });
 
@@ -22,9 +24,10 @@
       return $('button.navbar-toggle').click();
     });
     $('.slider').slick({
-      dots: true,
+      dots: false,
       infinite: true,
       cssEase: 'ease-in',
+      accessibility: false,
       speed: 600,
       autoplay: true,
       autoplaySpeed: 10000,
@@ -34,12 +37,8 @@
       prevArrow: '',
       nextArrow: ''
     });
-    $('#open-mobilemenu').animatedModal({
-      modalTarget: 'mobilemenu',
-      color: '#FFF',
-      animatedIn: 'bounceInDown',
-      animatedOut: 'bounceOutUp',
-      animationDuration: '.3s'
+    $('.closebutton').on('click', function() {
+      return $(this).parents('.profile').modal('hide');
     });
     return smoothScroll.init({
       offset: 70

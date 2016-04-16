@@ -10,6 +10,9 @@ $mobile: "screen and (max-width: 767px)"
   border: 1px solid red
 
 // class
+.tw-link
+  font-size: 11pt
+  color: #55acee !important
 .maxwidth
   width: 100%
 .eater
@@ -30,6 +33,10 @@ $mobile: "screen and (max-width: 767px)"
     display: none
 .list-group-item
   background-color: #F5F5F5
+.closebutton
+  color: rgba(200,200,200,1)
+  font-size: 18pt
+  cursor: pointer
 
 // for menu-button
 .menuisactive
@@ -41,6 +48,7 @@ $mobile: "screen and (max-width: 767px)"
 .navbar
   margin-bottom: 0
   background-color: rgba(255,255,255,0)
+  min-height: 0
 .navbar-nav
   margin-right: 15px
   margin-top: 2px
@@ -61,6 +69,10 @@ $mobile: "screen and (max-width: 767px)"
   p
     color: #FFF
     padding-left: 10px
+
+// override slick.js
+.slick-slider
+  margin-bottom: 0
 
 html
   overflow: auto
@@ -88,7 +100,8 @@ body
     font-family: 'Lato'
     font-weight: 300
     font-size: 28pt
-    padding: 5px 5px 5px 30px
+    padding: 0
+    //padding: 5px 5px 5px 30px
     color: #000
     @media #{$mobile}
       font-size: 15pt
@@ -102,12 +115,13 @@ body
     font-weight: 300
     background-color: rgba(255,255,255,0)
     z-index: 10000
-    padding-top: 20px
-    padding-bottom: 10px
+    //padding-top: 20px
+    //padding-bottom: 10px
     #gnavi
-      background: linear-gradient(to right, rgba(255,255,255,0.4) 0%, #FFF 100%)
+      background: rgba(255,255,255,0.55)
+      //background: linear-gradient(to right, rgba(255,255,255,0.4) 0%, #FFF 100%)
       @media #{$mobile}
-        background-color: rgba(255,255,255,0.8)
+        background: rgba(255,255,255,0.8)
     a
       text-decoration: none
       color: #000
@@ -154,6 +168,7 @@ body
     a
       color: red
     .profile
+      z-index: 100000
       background-color: rgba(0,0,0,0.3)
       color: #000
     background-color: rgba(0,0,0,0.8)
@@ -176,8 +191,10 @@ body
         margin-top: 150px
         @media #{$mobile}
           margin-top: 0
-      img
-        width: 100%
+    img.profileimg
+      width: 100%
+    img.tw
+      width: 40px
 
   #live
     background-color: rgba(255,255,255,0.96)

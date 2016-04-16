@@ -1,8 +1,10 @@
 $(window).scroll ->
   if $(@).scrollTop() > 100
     $('.menubutton').fadeIn()
+    $('.menubody').fadeIn()
   else
     $('.menubutton').fadeOut()
+    $('.menubody').fadeOut()
 
 
 $(document).ready () ->
@@ -31,9 +33,10 @@ $(document).ready () ->
   #})
 
   $('.slider').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     cssEase: 'ease-in',
+    accessibility: false,
     speed: 600,
     autoplay: true,
     autoplaySpeed: 10000,
@@ -45,14 +48,17 @@ $(document).ready () ->
     #fade: true,
   })
 
+  $('.closebutton').on 'click', ->
+    $(@).parents('.profile').modal('hide')
+
   # init animation modal
-  $('#open-mobilemenu').animatedModal({
-    modalTarget: 'mobilemenu',
-    color: '#FFF',
-    animatedIn: 'bounceInDown',
-    animatedOut: 'bounceOutUp',
-    animationDuration: '.3s'
-  })
+  #$('#open-mobilemenu').animatedModal({
+  #  modalTarget: 'mobilemenu',
+  #  color: '#FFF',
+  #  animatedIn: 'bounceInDown',
+  #  animatedOut: 'bounceOutUp',
+  #  animationDuration: '.3s'
+  #})
 
   smoothScroll.init(
     offset: 70

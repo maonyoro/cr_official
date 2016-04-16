@@ -20,7 +20,7 @@ html(lang='ja')
   body
 
     #cruelreasonofficialwebsite
-      p CRUEL REASON Official Website
+      //p CRUEL REASON Official Website
 
     //------------------------------------
     // Header
@@ -34,7 +34,7 @@ html(lang='ja')
                 button.navbar-toggle(type='button' data-toggle='collapse' data-target='#gnavi')
                   span.menubutton.glyphicon.glyphicon-menu-down
               #gnavi.collapse.navbar-collapse
-                ul.nav.navbar-nav
+                ul.menubody.nav.navbar-nav
                   li
                     a(href="#" "data-scroll") Top
                   li
@@ -92,11 +92,13 @@ html(lang='ja')
             .hideto
               a(href="#hideto-profile" data-toggle="modal" data-target="#hideto-profile")
                 h3.eater Vocal. hideto
-                img(src="./img/201604/hideto.jpg")
+                img.profileimg(src="./img/201604/hideto.jpg")
               #hideto-profile.profile.modal.fade(role="dialog")
                 .modal-dialog(role="document")
                   .modal-content
                     .modal-body
+                      .closebutton.pull-right
+                        span.glyphicon.glyphicon-remove-circle
                       h4 Name
                       p 英人
                       h4 Part
@@ -105,17 +107,22 @@ html(lang='ja')
                       p 3/9
                       h4 Blood Type
                       p O
-                      a(href="https://twitter.com/gigahideto" target="_blank") Twitter
+                      h4 Social Links
+                      a.tw-link(href="https://twitter.com/gigahideto" target="_blank")
+                        img.tw(src="./img/twitter.png")
+                        | Twitter
 
           .person.col-md-5.col-md-offset-2
             .mao
               a(href="#mao-profile" data-toggle="modal" data-target="#mao-profile")
                 h3.eater.text-right Guitar. mao
-                img.pull-right(src="./img/201604/mao.jpg")
+                img.profileimg.pull-right(src="./img/201604/mao.jpg")
               #mao-profile.profile.modal.fade(role="dialog")
                 .modal-dialog(role="document")
                   .modal-content
                     .modal-body
+                      .closebutton.pull-right
+                        span.glyphicon.glyphicon-remove-circle
                       h4 Name
                       p mao
                       h4 Part
@@ -124,18 +131,23 @@ html(lang='ja')
                       p 5/4
                       h4 Blood Type
                       p B
-                      a(href="https://twitter.com/maonyoro" target="_blank") Twitter
+                      h4 Social Links
+                      a.tw-link(href="https://twitter.com/maonyoro" target="_blank")
+                        img.tw(src="./img/twitter.png")
+                        | Twitter
 
         .row
           .person.col-md-5
             .utamaru
               a(href="#utamaru-profile" data-toggle="modal" data-target="#utamaru-profile")
                 h3.eater Bass. utamaru
-                img(src="./img/201604/utamaru.jpg")
+                img.profileimg(src="./img/201604/utamaru.jpg")
               #utamaru-profile.profile.modal.fade(role="dialog")
                 .modal-dialog(role="document")
                   .modal-content
                     .modal-body
+                      .closebutton.pull-right
+                        span.glyphicon.glyphicon-remove-circle
                       h4 Name
                       p うたまる
                       h4 Part
@@ -144,17 +156,22 @@ html(lang='ja')
                       p 7/23
                       h4 Blood Type
                       p A
-                      a(href="https://twitter.com/cruel_utamaru" target="_blank") Twitter
+                      h4 Social Links
+                      a.tw-link(href="https://twitter.com/cruel_utamaru" target="_blank")
+                        img.tw(src="./img/twitter.png")
+                        | Twitter
 
           .person.col-md-5.col-md-offset-2
             .yuri
               a(href="#yuri-profile" data-toggle="modal" data-target="#yuri-profile")
                 h3.eater.text-right Drums. yuri
-                img.pull-right(src="./img/201604/yuri.jpg")
+                img.profileimg.pull-right(src="./img/201604/yuri.jpg")
               #yuri-profile.profile.modal.fade(role="dialog")
                 .modal-dialog(role="document")
                   .modal-content
                     .modal-body
+                      .closebutton.pull-right
+                        span.glyphicon.glyphicon-remove-circle
                       h4 Name
                       p yuri
                       h4 Part
@@ -163,7 +180,10 @@ html(lang='ja')
                       p 2/13
                       h4 Blood Type
                       p O
-                      a(href="https://twitter.com/tesroayuri" target="_blank") Twitter
+                      h4 Social Links
+                      a.tw-link(href="https://twitter.com/tesroayuri" target="_blank")
+                        img.tw(src="./img/twitter.png")
+                        | Twitter
 
 
     //------------------------------------
@@ -222,10 +242,10 @@ html(lang='ja')
     //------------------------------------
     script(type='text/javascript' src='lib/bootstrap-3.3.6-dist/js/bootstrap.min.js')
     script(type='text/javascript' src='lib/smooth-scroll-master/dist/js/smooth-scroll.min.js')
-    script(type='text/javascript' src='lib/animatedModal.js-master/animatedModal.min.js')
+    //-script(type='text/javascript' src='lib/animatedModal.js-master/animatedModal.min.js')
     //-- todo sticky-headerどっちか使ってどっちか消す↓
-    script(type='text/javascript' src='lib/garand-sticky-9434b1f/jquery.sticky.js')
-    script(type='text/javascript' src='lib/sticky-kit.min.js')
+    //-script(type='text/javascript' src='lib/garand-sticky-9434b1f/jquery.sticky.js')
+    //-script(type='text/javascript' src='lib/sticky-kit.min.js')
     script(type='text/javascript' src='lib/slick-1.5.9/slick/slick.min.js')
     //script(type="text/javascript" src='lib/bootstrap-modal-master/js/bootstrap-modal.js')
     script(type='text/javascript' src='./index.js')
