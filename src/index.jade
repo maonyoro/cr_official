@@ -38,6 +38,8 @@ html(lang='ja')
                   li
                     a(href="#" "data-scroll") Top
                   li
+                    a(href="#information" "data-scroll") Information
+                  li
                     a(href="#member" "data-scroll") Member
                   li
                     a(href="#live" "data-scroll") Live Schedule
@@ -72,11 +74,14 @@ html(lang='ja')
     //------------------------------------
     // Informatin
     //------------------------------------
-    //#info
-    //  .container
-    //    .row
-    //      .col-md-12
-    //        h2.text-center Information
+    #information
+      .container
+        .row
+          .col-md-12
+            h2.text-center Information
+        .row
+          .col-md-12
+            a.twitter-timeline(href="https://twitter.com/cruel_reason" data-widget-id="721699534041026560")
 
 
     //------------------------------------
@@ -249,3 +254,7 @@ html(lang='ja')
     script(type='text/javascript' src='lib/slick-1.5.9/slick/slick.min.js')
     //script(type="text/javascript" src='lib/bootstrap-modal-master/js/bootstrap-modal.js')
     script(type='text/javascript' src='./index.js')
+
+    //- twitter widget
+    script
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

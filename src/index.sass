@@ -22,7 +22,7 @@ $mobile: "screen and (max-width: 767px)"
   margin-right: 15px
   margin-top: 10px
   font-size: 24pt
-  opacity: 0.6
+  opacity: 0.9
 .mobileonly
   display: none
   @media #{$mobile}
@@ -40,7 +40,7 @@ $mobile: "screen and (max-width: 767px)"
 
 // for menu-button
 .menuisactive
-  background-color: rgba(255,255,255,0.95) !important
+  background-color: rgba(0,0,0,0.95) !important
 .menubutton
   display: none
 
@@ -113,18 +113,22 @@ body
     font-family: 'Lato'
     font-size: 17pt
     font-weight: 300
-    background-color: rgba(255,255,255,0)
+    background-color: rgba(0,0,0,0)
     z-index: 10000
     //padding-top: 20px
     //padding-bottom: 10px
     #gnavi
-      background: rgba(255,255,255,0.55)
-      //background: linear-gradient(to right, rgba(255,255,255,0.4) 0%, #FFF 100%)
+      //background: rgba(255,255,255,0.75)
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, #000 100%)
+      padding-right: 20px
       @media #{$mobile}
-        background: rgba(255,255,255,0.8)
+        padding-right: 0
+        background: rgba(0,0,0,0.9)
     a
       text-decoration: none
-      color: #000
+      color: #FFF
+      &:hover, &:active
+        background-color: rgba(80,80,80,0.9)
 
       ul
         list-style: none
@@ -145,12 +149,17 @@ body
     font-weight: 300
 
   //------------------------------------
-  #info
+  #information
+    background-color: rgba(90,90,90,0.4)
+    color: rgba(255,255,255,0.95)
+    text-align: center
     padding-top: 100px
     padding-bottom: 100px
 
   //------------------------------------
   #contents
+    padding-top: 50px
+    padding-bottom: 50px
     .photoview
       max-width: 1280px
       margin-left: auto
@@ -158,7 +167,8 @@ body
 
   //------------------------------------
   #movie
-    background-image: url("./img/bg01.jpg")
+    //background-image: url("./img/bg01.jpg")
+    //background-color: rgba(80,80,80,0.6)
     background-size: cover
     padding-top: 100px
     padding-bottom: 100px

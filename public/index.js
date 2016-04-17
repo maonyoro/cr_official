@@ -1,11 +1,9 @@
 (function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('.menubutton').fadeIn();
-      return $('.menubody').fadeIn();
+      return $('.menubutton').fadeIn();
     } else {
-      $('.menubutton').fadeOut();
-      return $('.menubody').fadeOut();
+      return $('.menubutton').fadeOut();
     }
   });
 

@@ -1,10 +1,8 @@
 $(window).scroll ->
   if $(@).scrollTop() > 100
     $('.menubutton').fadeIn()
-    $('.menubody').fadeIn()
   else
     $('.menubutton').fadeOut()
-    $('.menubody').fadeOut()
 
 
 $(document).ready () ->
