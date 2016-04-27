@@ -1,7 +1,4 @@
 @charset "UTF-8";
-.debug {
-  border: 1px solid red; }
-
 .tw-link {
   font-size: 11pt;
   color: #55acee !important; }
@@ -38,6 +35,9 @@
   color: #c8c8c8;
   font-size: 18pt;
   cursor: pointer; }
+
+.color-red {
+  color: #F00; }
 
 .menuisactive {
   background-color: rgba(0, 0, 0, 0.95) !important; }
@@ -81,48 +81,73 @@ html {
   overflow: auto; }
 
 body {
-  background-image: url("./img/bg02.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   opacity: 0.94;
   overflow: hidden;
   font-size: 10pt;
-  font-family: -apple-system, 'Lato', ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif;
+  font-family: 'Lato', -apple-system, ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif;
   font-weight: 400; }
+  body #background-hack {
+    z-index: -1;
+    background-image: url("./img/bg02.jpg");
+    background-size: 150% 1000px;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   body h2 {
     font-weight: 800;
-    font-size: 20pt;
-    letter-spacing: 0.06em;
-    margin-bottom: 50px; }
-  body #cruelreasonofficialwebsite {
-    background-color: #FFF;
-    font-family: 'Lato';
-    font-weight: 300;
     font-size: 28pt;
+    letter-spacing: 0.06em;
+    margin-bottom: 50px;
+    font-family: 'Eater', serif; }
+    @media screen and (max-width: 767px) {
+      body h2 {
+        font-size: 22pt; } }
+  body #cruelreasonofficialwebsite {
+    background-color: transparent;
     padding: 0;
-    color: #000; }
+    padding-top: 35px;
+    padding-right: 30px; }
+    body #cruelreasonofficialwebsite h1 {
+      text-align: right;
+      font-family: 'Eater', serif;
+      font-size: 26pt;
+      letter-spacing: 0.28em;
+      color: #f00; }
+      body #cruelreasonofficialwebsite h1 span {
+        font-size: 36pt; }
     @media screen and (max-width: 767px) {
       body #cruelreasonofficialwebsite {
-        font-size: 15pt;
-        padding: 10px 5px 5px 10px; } }
+        padding: 10px 5px 5px 10px; }
+        body #cruelreasonofficialwebsite h1 {
+          font-size: 17pt;
+          text-align: center;
+          letter-spacing: 0.14em; }
+          body #cruelreasonofficialwebsite h1 span {
+            font-size: 22pt; } }
   body #header {
-    text-align: center;
-    font-family: 'Lato';
-    font-size: 17pt;
-    font-weight: 300;
     background-color: transparent;
-    z-index: 10000; }
+    z-index: 10000;
+    text-align: center; }
     body #header #gnavi {
+      font-family: 'Eater', serif;
+      font-size: 14pt;
+      margin-left: 200px;
       background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #000 100%);
       padding-right: 20px; }
+      @media screen and (max-width: 1049px) {
+        body #header #gnavi {
+          font-size: 13pt;
+          margin-left: 0;
+          padding-right: 0; } }
       @media screen and (max-width: 767px) {
         body #header #gnavi {
-          padding-right: 0;
           background: rgba(0, 0, 0, 0.9); } }
     body #header a {
       text-decoration: none;
-      color: #FFF; }
+      color: rgba(255, 255, 255, 0.5); }
       body #header a:hover, body #header a:active {
         background-color: rgba(80, 80, 80, 0.9); }
       body #header a ul {
@@ -136,11 +161,6 @@ body {
         position: fixed;
         width: 100%;
         padding: 0; } }
-  body #mobileheader {
-    margin-top: 10px;
-    font-family: 'Lato';
-    font-size: 17pt;
-    font-weight: 300; }
   body #information {
     background-color: rgba(90, 90, 90, 0.4);
     color: rgba(255, 255, 255, 0.95);
@@ -148,7 +168,7 @@ body {
     padding-top: 100px;
     padding-bottom: 100px; }
   body #contents {
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px; }
     body #contents .photoview {
       max-width: 1280px;
@@ -191,7 +211,7 @@ body {
     body #member img.tw {
       width: 40px; }
   body #live {
-    background-color: rgba(255, 255, 255, 0.96);
+    background-color: rgba(255, 255, 255, 0.76);
     padding-top: 100px;
     padding-bottom: 100px; }
     body #live .live {
@@ -203,7 +223,7 @@ body {
         color: #F030A0;
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 14pt;
+        font-size: 18pt;
         font-weight: 900;
         letter-spacing: 0.12em;
         font-family: 'Merriweather'; }
@@ -211,13 +231,13 @@ body {
         font-size: 13pt;
         font-family: 'Eater', serif; }
   body #ticket {
-    background-color: rgba(128, 128, 128, 0.96);
+    background-color: rgba(128, 128, 128, 0.76);
     padding-top: 100px;
     padding-bottom: 100px; }
     body #ticket a {
       color: red; }
   body #contact {
-    background-color: rgba(255, 255, 255, 0.96);
+    background-color: rgba(255, 255, 255, 0.76);
     padding-top: 100px;
     padding-bottom: 100px; }
   body #footer {

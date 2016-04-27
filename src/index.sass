@@ -1,13 +1,7 @@
 // media query setting
 $large: "screen and (max-width: 1350px)"
-$middle: "screen and (max-width: 991px)"
+$middle: "screen and (max-width: 1049px)"
 $mobile: "screen and (max-width: 767px)"
-//@media #{$middle} {}
-
-@mixin debug($color)
-  border: 1px solid $color
-.debug
-  border: 1px solid red
 
 // class
 .tw-link
@@ -37,6 +31,8 @@ $mobile: "screen and (max-width: 767px)"
   color: rgba(200,200,200,1)
   font-size: 18pt
   cursor: pointer
+.color-red
+  color: #F00
 
 // for menu-button
 .menuisactive
@@ -78,58 +74,81 @@ html
   overflow: auto
 
 body
-  background-image: url("./img/bg02.jpg")
-  background-size: cover
-  background-repeat: no-repeat
-  background-attachment: fixed
   opacity: 0.94
   overflow: hidden
   font-size: 10pt
-  font-family: -apple-system, 'Lato', ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif
+  font-family: 'Lato', -apple-system, ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif
   font-weight: 400
+
+  // 背景設定用
+  // iOS(だけ?)はbackground-attachementが効かないので無理やり
+  #background-hack
+    z-index: -1
+    background-image: url("./img/bg02.jpg")
+    background-size: 150% 1000px
+    background-repeat: no-repeat
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
 
   h2
     font-weight: 800
-    font-size: 20pt
+    font-size: 28pt
     letter-spacing: 0.06em
     margin-bottom: 50px
+    font-family: 'Eater', serif
+    @media #{$mobile}
+      font-size: 22pt
 
   //------------------------------------
   #cruelreasonofficialwebsite
-    background-color: #FFF
-    font-family: 'Lato'
-    font-weight: 300
-    font-size: 28pt
+    h1
+      text-align: right
+      font-family: 'Eater', serif
+      font-size: 26pt
+      letter-spacing: 0.28em
+      color: #f00
+      span
+        font-size: 36pt
+    background-color: rgba(0,0,0,0)
     padding: 0
-    //padding: 5px 5px 5px 30px
-    color: #000
+    padding-top: 35px
+    padding-right: 30px
     @media #{$mobile}
-      font-size: 15pt
+      h1
+        font-size: 17pt
+        text-align: center
+        letter-spacing: 0.14em
+        span
+          font-size: 22pt
       padding: 10px 5px 5px 10px
 
   //------------------------------------
   #header
-    text-align: center
-    font-family: 'Lato'
-    font-size: 17pt
-    font-weight: 300
     background-color: rgba(0,0,0,0)
     z-index: 10000
-    //padding-top: 20px
-    //padding-bottom: 10px
+    text-align: center
     #gnavi
-      //background: rgba(255,255,255,0.75)
+      font-family: 'Eater', serif
+      font-size: 14pt
+      margin-left: 200px
       background: linear-gradient(to right, rgba(255,255,255,0) 0%, #000 100%)
       padding-right: 20px
-      @media #{$mobile}
+      @media #{$middle}
+        font-size: 13pt
+        margin-left: 0
         padding-right: 0
+      @media #{$mobile}
         background: rgba(0,0,0,0.9)
+    // グローバルメニュー内
     a
       text-decoration: none
-      color: #FFF
+      color: rgba(255,255,255,0.5)
       &:hover, &:active
         background-color: rgba(80,80,80,0.9)
-
       ul
         list-style: none
         li
@@ -142,13 +161,6 @@ body
       padding: 0
 
   //------------------------------------
-  #mobileheader
-    margin-top: 10px
-    font-family: 'Lato'
-    font-size: 17pt
-    font-weight: 300
-
-  //------------------------------------
   #information
     background-color: rgba(90,90,90,0.4)
     color: rgba(255,255,255,0.95)
@@ -158,7 +170,7 @@ body
 
   //------------------------------------
   #contents
-    padding-top: 50px
+    padding-top: 10px
     padding-bottom: 50px
     .photoview
       max-width: 1280px
@@ -167,8 +179,6 @@ body
 
   //------------------------------------
   #movie
-    //background-image: url("./img/bg01.jpg")
-    //background-color: rgba(80,80,80,0.6)
     background-size: cover
     padding-top: 100px
     padding-bottom: 100px
@@ -207,7 +217,7 @@ body
       width: 40px
 
   #live
-    background-color: rgba(255,255,255,0.96)
+    background-color: rgba(255,255,255,0.76)
     padding-top: 100px
     padding-bottom: 100px
     .live
@@ -219,7 +229,7 @@ body
         color: #F030A0
         padding-top: 10px
         padding-bottom: 10px
-        font-size: 14pt
+        font-size: 18pt
         font-weight: 900
         letter-spacing: 0.12em
         font-family: 'Merriweather'
@@ -230,7 +240,7 @@ body
 
   //------------------------------------
   #ticket
-    background-color: rgba(128,128,128,0.96)
+    background-color: rgba(128,128,128,0.76)
     padding-top: 100px
     padding-bottom: 100px
     a
@@ -239,7 +249,7 @@ body
 
   //------------------------------------
   #contact
-    background-color: rgba(255,255,255,0.96)
+    background-color: rgba(255,255,255,0.76)
     padding-top: 100px
     padding-bottom: 100px
 

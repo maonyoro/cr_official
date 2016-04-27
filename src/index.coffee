@@ -37,7 +37,7 @@ $(document).ready () ->
     accessibility: false,
     speed: 600,
     autoplay: true,
-    autoplaySpeed: 10000,
+    autoplaySpeed: 5000,
     pauseOnHover: true,
     swipe: true,
     arrow: false,
