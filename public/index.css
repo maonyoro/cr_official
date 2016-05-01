@@ -62,6 +62,9 @@
 .navbar-toggle {
   margin-right: 0; }
 
+.modal-backdrop {
+  position: static; }
+
 .modal-body {
   background-color: rgba(0, 0, 0, 0.95);
   font-family: 'Lato';
@@ -109,7 +112,7 @@ body {
     background-color: transparent;
     padding: 0;
     padding-top: 35px;
-    padding-right: 30px; }
+    padding-right: 11%; }
     body #cruelreasonofficialwebsite h1 {
       text-align: right;
       font-family: 'Eater', serif;
@@ -187,7 +190,7 @@ body {
     body #member a {
       color: red; }
     body #member .profile {
-      z-index: 100000;
+      z-index: 10001;
       background-color: rgba(0, 0, 0, 0.3);
       color: #000; }
     body #member .person {
