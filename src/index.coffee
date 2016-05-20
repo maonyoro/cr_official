@@ -7,6 +7,9 @@ $(window).scroll ->
 
 $(document).ready () ->
 
+  # リンクを強制的に target="_blank" に
+  $("a[href^='http']:not([href*='" + location.hostname + "'])").attr('target', '_blank')
+
   #  $('.menu-onigiri').hover(
   #    -> $(@).attr 'src', "image/menu_onigiri_on.png"
   #    -> $(@).attr 'src', "image/menu_onigiri.png"

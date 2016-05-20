@@ -8,6 +8,7 @@
   });
 
   $(document).ready(function() {
+    $("a[href^='http']:not([href*='" + location.hostname + "'])").attr('target', '_blank');
     $('button.navbar-toggle').on('click', function() {
       $('.navbar-header').toggleClass('menuisactive');
       if ($('.menubutton').hasClass('glyphicon-menu-down')) {
