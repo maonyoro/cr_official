@@ -52,6 +52,8 @@ html(lang='ja')
                   li
                     a(href="#ticket" "data-scroll") Ticket
                   li
+                    a(href="#mailmagazine" "data-scroll") Mail Magazine
+                  li
                     a(href="#contact" "data-scroll") Contact
 
     //------------------------------------
@@ -119,7 +121,7 @@ html(lang='ja')
                       h4 Blood Type
                       p O
                       h4 Social Links
-                      a.tw-link(href="https://twitter.com/gigahideto" target="_blank")
+                      a.tw-link(href="https://twitter.com/gigahideto")
                         img.tw(src="./img/twitter.png")
                         | Twitter
 
@@ -143,7 +145,7 @@ html(lang='ja')
                       h4 Blood Type
                       p B
                       h4 Social Links
-                      a.tw-link(href="https://twitter.com/maonyoro" target="_blank")
+                      a.tw-link(href="https://twitter.com/maonyoro")
                         img.tw(src="./img/twitter.png")
                         | Twitter
 
@@ -168,7 +170,7 @@ html(lang='ja')
                       h4 Blood Type
                       p A
                       h4 Social Links
-                      a.tw-link(href="https://twitter.com/cruel_utamaru" target="_blank")
+                      a.tw-link(href="https://twitter.com/cruel_utamaru")
                         img.tw(src="./img/twitter.png")
                         | Twitter
 
@@ -192,7 +194,7 @@ html(lang='ja')
                       h4 Blood Type
                       p O
                       h4 Social Links
-                      a.tw-link(href="https://twitter.com/tesroayuri" target="_blank")
+                      a.tw-link(href="https://twitter.com/tesroayuri")
                         img.tw(src="./img/twitter.png")
                         | Twitter
 
@@ -216,13 +218,33 @@ html(lang='ja')
         .row
           .col-md-12
             h2.text-center Ticket Reservation
-            a(href="https://form.jotform.me/60470680579463" target="_blank")
+            a(href="https://form.jotform.me/60470680579463")
               p.text-center チケットのご予約はこちら
             p.text-center (別Windowが開きます)
         //.row
         //  .col-md-8.col-md-offset-2
         //    .form-wrapper("marginbot-50" style="padding: 0")
         //      script(type="text/javascript" src="https://form.jotform.me/jsform/60470680579463")
+
+
+    //------------------------------------
+    // Mail Magazine
+    //------------------------------------
+    #mailmagazine
+      .container
+        .row
+          .col-md-12
+            h2.text-center Mail Magazine
+            p.text-center ライブ当日情報、メンバーコメントや最新情報の不定期便・毎月20日のライブ情報などをメールにて配信しています。
+            p.text-center
+              | 件名
+              span.text-danger メルマガ希望
+              | として
+              br
+              input.copyable(value="cruel-reason@zmf.co.jp")
+              br
+              | に空メールを送信してください。
+            p.text-center メルマガは info@zmf.co.jp より配信されますので、受信できるようメール設定をご確認ください。
 
 
     //------------------------------------
@@ -233,7 +255,7 @@ html(lang='ja')
         .row
           .col-md-12
             h2.text-center Contact
-            a(href="https://form.jotform.me/60530173636451" target="_blank")
+            a(href="https://form.jotform.me/60530173636451")
               p.text-center お問い合わせはこちら
             p.text-center (別Windowが開きます)
 
@@ -245,7 +267,10 @@ html(lang='ja')
       .container
         .row
           .col-md-12
-            p.text-right &copy;Copyright 2016 CRUEL REASON All rights reserved.
+            p.text-right
+              | &copy;Copyright 2016
+              a(href="http://zmf.co.jp" style="padding: 0 3px") Zënit Music Factory
+              | and CRUEL REASON All rights reserved.
 
 
     //------------------------------------

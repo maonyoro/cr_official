@@ -7,6 +7,10 @@ $(window).scroll ->
 
 $(document).ready () ->
 
+  # input要素クリック→コピーできるよう全選択状態に
+  $('.copyable').on 'click', (e) ->
+    e.target.setSelectionRange(0, e.target.value.length)
+
   # リンクを強制的に target="_blank" に
   $("a[href^='http']:not([href*='" + location.hostname + "'])").attr('target', '_blank')
 

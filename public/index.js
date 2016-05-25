@@ -8,6 +8,9 @@
   });
 
   $(document).ready(function() {
+    $('.copyable').on('click', function(e) {
+      return e.target.setSelectionRange(0, e.target.value.length);
+    });
     $("a[href^='http']:not([href*='" + location.hostname + "'])").attr('target', '_blank');
     $('button.navbar-toggle').on('click', function() {
       $('.navbar-header').toggleClass('menuisactive');
