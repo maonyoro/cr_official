@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body {
+  font-family: 'Lato', -apple-system, ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif;
+  font-weight: 400;
+  background-color: #EEE;
+  color: #000; }
+
+a {
+  color: #000;
+  text-decoration: underline; }
+
+h1 {
+  font-size: 24pt;
+  font-family: 'Merriweather';
+  border-bottom: 1px solid #000; }
+
+h2 {
+  font-size: 20pt;
+  border-left: 5px solid #F00;
+  padding-left: 5px; }
+
+h3 {
+  color: #F00;
+  font-size: 18pt;
+  margin-left: 5px;
+  margin-top: 25px; }
+
+h4 {
+  font-size: 16pt;
+  margin-left: 10px; }
