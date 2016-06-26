@@ -1,6 +1,6 @@
 .row
   - var num='006'
-  .col-md-6
+  .col-md-4
     .live.panel.panel-default
       .panel-heading
         a.list-group-item(href="#liveinfo#{num}" data-toggle="collapse" style="border:0")
@@ -23,6 +23,45 @@
           - Type『G』
           - …and more
 
+  - var num='007'
+  .col-md-8
+    .live.panel.panel-default
+      .panel-heading
+        a.list-group-item(href="#liveinfo#{num}" data-toggle="collapse" style="border:0")
+          .date 8/17
+          .title 漆黒のシンフォニー at 新宿BLAZE
+            span.caret
+      .collapse.panel-body(id="liveinfo#{num}")
+        .row
+          .col-md-6
+            :markdown
+              - [詳細はこちら](./tamakan2016.html)
+              #### 会場
+              - 新宿BLAZE
+              #### 時間
+              - OPEN 12:45  START 13:15
+              #### チケット
+              - 前売 3800円  当日 4500円 (Drink代別 500円)
+              #### 出演
+              - CRUEL REASON
+              - ギガマウス(GUEST)
+              - Smileberry(GUEST)
+              - VIVALET
+              - KISS the CROWN
+              - ジャックケイパー
+              - スティグマ
+              - ぞんび
+              - DiSPiИA
+              - TRA TRA TRA
+              - 魃
+              - FAZ
+              - マーブル
+              - MALISEND
+          .col-md-6
+            a(href="./img/tamakan2016.jpg")
+              img(src="./img/tamakan2016_thumb.jpg" style="width: 70%")
+
+.row
   - var num='008'
   .col-md-6
     .live.panel.panel-default
@@ -55,43 +94,4 @@
           - 主催: [Ains](http://ains-a.com)
           - 企画/制作: Ains/MadWink.
           - お問い合わせ: 浦和ナルシス(TEL:048-824-8771)
-
-.row
-  - var num='007'
-  .col-md-12
-    .live.panel.panel-default
-      .panel-heading
-        a.list-group-item(href="#liveinfo#{num}" data-toggle="collapse" style="border:0")
-          .date 8/17
-          .title 漆黒のシンフォニー at 新宿BLAZE
-            span.caret
-      .collapse.panel-body(id="liveinfo#{num}")
-        .row
-          .col-md-6
-            :markdown
-              [詳細はこちら](./tamakan2016.html)
-              #### 会場
-              - 新宿BLAZE
-              #### 時間
-              - OPEN 12:45  START 13:15
-              #### チケット
-              - 前売 3800円  当日 4500円 (Drink代別 500円)
-              #### 出演
-              - CRUEL REASON
-              - ギガマウス(GUEST)
-              - Smileberry(GUEST)
-              - VIVALET
-              - KISS the CROWN
-              - ジャックケイパー
-              - スティグマ
-              - ぞんび
-              - DiSPiИA
-              - TRA TRA TRA
-              - 魃
-              - FAZ
-              - マーブル
-              - MALISEND
-          .col-md-6
-            a(href="./img/tamakan2016.jpg")
-              img(src="./img/tamakan2016.jpg" style="width: 70%")
 
