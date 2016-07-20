@@ -80,6 +80,10 @@
 .slick-slider {
   margin-bottom: 0; }
 
+.twitter-timeline {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3); }
+
 html {
   overflow: auto; }
 
