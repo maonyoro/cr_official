@@ -113,3 +113,41 @@
           #### その他
           - 詳細発表され次第UPいたします
 
+  - var num='014'
+  .col-md-6
+    .live.panel.panel-default
+      .panel-heading
+        a.list-group-item(href="#liveinfo#{num}" data-toggle="collapse" style="border:0")
+          .date 11/6
+          .title タイトル未定
+            span.caret
+      .collapse.panel-body(id="liveinfo#{num}")
+        :markdown
+          #### 会場
+          - 浦和ナルシス
+          #### その他
+          - 詳細発表され次第UPいたします
+
+.row
+  - var num='015'
+  .col-md-12
+    .live.panel.panel-default
+      .panel-heading
+        a.list-group-item(href="#liveinfo#{num}" data-toggle="collapse" style="border:0")
+          .date 11/20
+          .title(style="font-size:16pt") 無料ワンマンライブ 「狂奏 ~キョウソウ~」
+            span.caret
+      .collapse.panel-body(id="liveinfo#{num}")
+        .row
+          .col-md-4
+            :markdown
+              #### 会場
+              - 浦和ナルシス
+              #### 時間
+              - OPEN 12:00  START 12:30
+              #### チケット
+              - 前売 0円  当日 0円 (Drink代別 500円)
+              #### 出演
+              - CRUEL REASON
+          .col-md-8
+            img(src="./img/201611oneman.jpg" width="100%")
