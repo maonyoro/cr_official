@@ -39,6 +39,12 @@
 .color-red {
   color: #F00; }
 
+.right5px {
+  padding-right: 5px; }
+
+.bottom10px {
+  padding-bottom: 10px; }
+
 .menuisactive {
   background-color: rgba(0, 0, 0, 0.95) !important; }
 
