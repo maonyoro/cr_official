@@ -14,10 +14,6 @@ html(lang='ja')
     script(type='text/javascript' src='lib/jquery-1.12.2.min.js')
     //-- 自前ソースは最後に読み込む
     link(rel='stylesheet' href='./index.css')
-    // web fonts
-    link(href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet' type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Merriweather:900' rel='stylesheet' type='text/css')
 
   body
 
@@ -42,6 +38,8 @@ html(lang='ja')
                     a(href="#information" "data-scroll") Information
                   li
                     a(href="#member" "data-scroll") Member
+                  li
+                    a(href="#discography" "data-scroll") Discography
                   li
                     a(href="#live" "data-scroll") Live Schedule
                   li
@@ -78,14 +76,14 @@ html(lang='ja')
                 img.maxwidth(src="./img/201604/artist1.jpg")
 
 
-    //------------------------------------
-    // Movie
-    //------------------------------------
-    #movie
-      .container
-        .row
-          .col-md-6.col-md-offset-3
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/GgZgLddpy3I?rel=0" frameborder="0" allowfullscreen style="width:100%")
+    // //------------------------------------
+    // // Movie
+    // //------------------------------------
+    // #movie
+    //   .container
+    //     .row
+    //       .col-md-6.col-md-offset-3
+    //         iframe(width="560" height="315" src="https://www.youtube.com/embed/GgZgLddpy3I?rel=0" frameborder="0" allowfullscreen style="width:100%")
 
     //------------------------------------
     // Informatin
@@ -113,103 +111,7 @@ html(lang='ja')
         .row
           .col-md-12
             h2.text-center Member
-        .row
-          .person.col-md-5
-            .hideto
-              a(href="#hideto-profile" data-toggle="modal" data-target="#hideto-profile")
-                h3.eater Vocal. hideto
-                img.profileimg(src="./img/201604/hideto.jpg")
-              #hideto-profile.profile.modal.fade(role="dialog")
-                .modal-dialog(role="document")
-                  .modal-content
-                    .modal-body
-                      .closebutton.pull-right
-                        span.glyphicon.glyphicon-remove-circle
-                      h4 Name
-                      p 英人
-                      h4 Part
-                      p Vocal
-                      h4 Birthday
-                      p 3/9
-                      h4 Blood Type
-                      p O
-                      h4 Social Links
-                      a.tw-link(href="https://twitter.com/gigahideto")
-                        img.tw(src="./img/twitter.png")
-                        | Twitter
-
-          .person.col-md-5.col-md-offset-2
-            .mao
-              a(href="#mao-profile" data-toggle="modal" data-target="#mao-profile")
-                h3.eater.text-right Guitar. mao
-                img.profileimg.pull-right(src="./img/201604/mao.jpg")
-              #mao-profile.profile.modal.fade(role="dialog")
-                .modal-dialog(role="document")
-                  .modal-content
-                    .modal-body
-                      .closebutton.pull-right
-                        span.glyphicon.glyphicon-remove-circle
-                      h4 Name
-                      p mao
-                      h4 Part
-                      p Guitar
-                      h4 Birthday
-                      p 5/4
-                      h4 Blood Type
-                      p B
-                      h4 Social Links
-                      a.tw-link(href="https://twitter.com/maonyoro")
-                        img.tw(src="./img/twitter.png")
-                        | Twitter
-
-        .row
-          .person.col-md-5
-            .utamaru
-              a(href="#utamaru-profile" data-toggle="modal" data-target="#utamaru-profile")
-                h3.eater Bass. utamaru
-                img.profileimg(src="./img/201604/utamaru.jpg")
-              #utamaru-profile.profile.modal.fade(role="dialog")
-                .modal-dialog(role="document")
-                  .modal-content
-                    .modal-body
-                      .closebutton.pull-right
-                        span.glyphicon.glyphicon-remove-circle
-                      h4 Name
-                      p うたまる
-                      h4 Part
-                      p Bass
-                      h4 Birthday
-                      p 7/23
-                      h4 Blood Type
-                      p A
-                      h4 Social Links
-                      a.tw-link(href="https://twitter.com/cruel_utamaru")
-                        img.tw(src="./img/twitter.png")
-                        | Twitter
-
-          .person.col-md-5.col-md-offset-2
-            .yuri
-              a(href="#yuri-profile" data-toggle="modal" data-target="#yuri-profile")
-                h3.eater.text-right Drums. yuri
-                img.profileimg.pull-right(src="./img/201604/yuri.jpg")
-              #yuri-profile.profile.modal.fade(role="dialog")
-                .modal-dialog(role="document")
-                  .modal-content
-                    .modal-body
-                      .closebutton.pull-right
-                        span.glyphicon.glyphicon-remove-circle
-                      h4 Name
-                      p yuri
-                      h4 Part
-                      p Drums
-                      h4 Birthday
-                      p 2/13
-                      h4 Blood Type
-                      p O
-                      h4 Social Links
-                      a.tw-link(href="https://twitter.com/tesroayuri")
-                        img.tw(src="./img/twitter.png")
-                        | Twitter
+        include _member
 
 
     //------------------------------------
@@ -228,9 +130,9 @@ html(lang='ja')
                 strong COLOR
               u words:英人 / music:mao
               p ライブ会場にて無料配布中
-              p ao1
             .col-md-8
-              iframe(scrolling="no" id="hearthis_at_track_1037426" width="100%" height="150" src="https://hearthis.at/embed/1037426/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css=" frameborder="0" allowtransparency)
+              iframe(width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/283178334&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false")
+              //iframe(scrolling="no" id="hearthis_at_track_1037426" width="100%" height="150" src="https://hearthis.at/embed/1037426/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css=" frameborder="0" allowtransparency)
           .row.bottom10px
             .col-md-4
               h3 2nd demo CD
@@ -244,7 +146,8 @@ html(lang='ja')
                 strong.right5px typeB
                 | (くるえりと繋ぐ御縁音源) ライブ会場で1円で販売中
             .col-md-8
-              iframe(scrolling="no" id="hearthis_at_track_1037427" width="100%" height="150" src="https://hearthis.at/embed/1037427/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css=" frameborder="0" allowtransparency)
+              iframe(width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/283178328&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false")
+              //iframe(scrolling="no" id="hearthis_at_track_1037427" width="100%" height="150" src="https://hearthis.at/embed/1037427/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css=" frameborder="0" allowtransparency)
           .row.bottom10px
             .col-md-4
               h3 1stワンマン限定demo CD
@@ -253,7 +156,8 @@ html(lang='ja')
               u words:英人 / music:mao
               p ※現在は配布していません
             .col-md-8
-              iframe(scrolling="no" id="hearthis_at_track_1037425" width="100%" height="150" src="https://hearthis.at/embed/1037425/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css=" frameborder="0" allowtransparency)
+              iframe.soundcloud(width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/283178325&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false")
+              //iframe(scrolling="no" id="hearthis_at_track_1037425" width="100%" height="150" src="https://hearthis.at/embed/1037425/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css=" frameborder="0" allowtransparency)
 
 
     //------------------------------------
@@ -278,10 +182,6 @@ html(lang='ja')
             a(href="https://form.jotform.me/60470680579463")
               p.text-center チケットのご予約はこちら
             p.text-center (別Windowが開きます)
-        //.row
-        //  .col-md-8.col-md-offset-2
-        //    .form-wrapper("marginbot-50" style="padding: 0")
-        //      script(type="text/javascript" src="https://form.jotform.me/jsform/60470680579463")
 
 
     //------------------------------------
@@ -322,7 +222,11 @@ html(lang='ja')
               | TEL：048-824-0647 (Live House Narciss)
               br
               | Mail:
-              input.copyable(value="cruel-reason@zmf.co.jp" style="background-color:#CCC; border:0; padding:1px")
+              input.copyable(value="cruel-reason@zmf.co.jp")
+              br
+            p.text-center 当ウェブサイトに関する内容は以下にお願いします
+              br
+              input.copyable(value="general@cruel-reason.net" style="color:#555; width:160px")
 
 
     //------------------------------------
@@ -344,14 +248,14 @@ html(lang='ja')
     //------------------------------------
     script(type='text/javascript' src='lib/bootstrap-3.3.6-dist/js/bootstrap.min.js')
     script(type='text/javascript' src='lib/smooth-scroll-master/dist/js/smooth-scroll.min.js')
-    //-script(type='text/javascript' src='lib/animatedModal.js-master/animatedModal.min.js')
-    //-- todo sticky-headerどっちか使ってどっちか消す↓
-    //-script(type='text/javascript' src='lib/garand-sticky-9434b1f/jquery.sticky.js')
-    //-script(type='text/javascript' src='lib/sticky-kit.min.js')
     script(type='text/javascript' src='lib/slick-1.5.9/slick/slick.min.js')
-    //script(type="text/javascript" src='lib/bootstrap-modal-master/js/bootstrap-modal.js')
     script(type='text/javascript' src='./index.js')
 
     //- twitter widget
     script
       | !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+    // web fonts
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:900' rel='stylesheet' type='text/css')
