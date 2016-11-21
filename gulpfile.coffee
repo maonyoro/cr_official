@@ -1,17 +1,15 @@
 gulp = require('gulp')
 sass = require('gulp-sass')
-jade = require('gulp-jade')
+pug = require('gulp-pug')
 coffee = require('gulp-coffee')
 webserver = require('gulp-webserver')
 
 # Default rule
-gulp.task 'default', ->
-  gulp.run('jade','sass','coffee')
+gulp.task 'default', ['pug','sass','coffee','watch']
 
 # watch
 gulp.task 'watch', ->
-  gulp.run('jade','sass','coffee')
-  gulp.watch './src/*.jade', ['jade']
+  gulp.watch './src/*.pug', ['pug']
   gulp.watch './src/*.sass', ['sass']
   gulp.watch './src/*.coffee', ['coffee']
   gulp.src('./public').pipe(
@@ -21,8 +19,8 @@ gulp.task 'watch', ->
     })
   )
 
-gulp.task 'jade', ->
-  gulp.src('./src/*.jade').pipe(jade({pretty: true})).pipe(gulp.dest('./public/'))
+gulp.task 'pug', ->
+  gulp.src('./src/*.pug').pipe(pug({pretty: true})).pipe(gulp.dest('./public/'))
 
 gulp.task 'sass', ->
   gulp.src('./src/*.sass').pipe(sass()).pipe(gulp.dest('./public/'))
