@@ -240,6 +240,8 @@ body {
       padding-bottom: 25px; }
     body #discography .soundcloud {
       padding-bottom: 20px; }
+    body #discography #mugenhouyou {
+      z-index: 10001; }
   body #live {
     background-color: rgba(255, 255, 255, 0.76);
     padding-top: 100px;

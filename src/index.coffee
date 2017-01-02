@@ -14,10 +14,7 @@ $(document).ready () ->
   # リンクを強制的に target="_blank" に
   $("a[href^='http']:not([href*='" + location.hostname + "'])").attr('target', '_blank')
 
-  #  $('.menu-onigiri').hover(
-  #    -> $(@).attr 'src', "image/menu_onigiri_on.png"
-  #    -> $(@).attr 'src', "image/menu_onigiri.png"
-  #  )
+  # メニューボタン
   $('button.navbar-toggle').on 'click', ->
     $('.navbar-header').toggleClass('menuisactive')
     if $('.menubutton').hasClass('glyphicon-menu-down')
@@ -30,13 +27,7 @@ $(document).ready () ->
   $('#gnavi a').on 'click', ->
     $('button.navbar-toggle').click()
 
-  #$('#header').sticky({
-  #  topSpacing: 0,
-  #})
-  #$('#header').stick_in_parent({
-  #  offset_top: -50
-  #})
-
+  # Slick.js(カルーセル)
   $('.slider').slick({
     dots: false,
     infinite: true,
@@ -53,19 +44,11 @@ $(document).ready () ->
     #fade: true,
   })
 
+  # close lightbox(bootstrap modal)
   $('.closebutton').on 'click', ->
-    $(@).parents('.profile').modal('hide')
-
-  # init animation modal
-  #$('#open-mobilemenu').animatedModal({
-  #  modalTarget: 'mobilemenu',
-  #  color: '#FFF',
-  #  animatedIn: 'bounceInDown',
-  #  animatedOut: 'bounceOutUp',
-  #  animationDuration: '.3s'
-  #})
+    $(@).parents().modal('hide')
 
   smoothScroll.init(
-    offset: 70
+    offset: 0
   )
 

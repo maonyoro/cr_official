@@ -40,10 +40,10 @@
       nextArrow: ''
     });
     $('.closebutton').on('click', function() {
-      return $(this).parents('.profile').modal('hide');
+      return $(this).parents().modal('hide');
     });
     return smoothScroll.init({
-      offset: 70
+      offset: 0
     });
   });
 

@@ -37,15 +37,11 @@ html(lang='ja')
                   li
                     a(href="#information" "data-scroll") Information
                   li
-                    a(href="#member" "data-scroll") Member
+                    a(href="#live" "data-scroll") Live
                   li
                     a(href="#discography" "data-scroll") Discography
                   li
-                    a(href="#live" "data-scroll") Live
-                  //li
-                  //  a(href="#ticket" "data-scroll") Ticket
-                  //li
-                  //  a(href="#mailmagazine" "data-scroll") Mail Magazine
+                    a(href="#member" "data-scroll") Member
                   li
                     a(href="#contact" "data-scroll") Contact
 
@@ -71,19 +67,19 @@ html(lang='ja')
           .col-md-12
             .photoview.slider
               .contents-image
-                img.maxwidth(src="./img/201611oneman.jpg")
-              .contents-image
                 img.maxwidth(src="./img/201604/artist1.jpg")
+              .contents-image
+                img.maxwidth(src="./img/mugen.jpg")
 
 
-    // //------------------------------------
-    // // Movie
-    // //------------------------------------
-    // #movie
-    //   .container
-    //     .row
-    //       .col-md-6.col-md-offset-3
-    //         iframe(width="560" height="315" src="https://www.youtube.com/embed/GgZgLddpy3I?rel=0" frameborder="0" allowfullscreen style="width:100%")
+    //------------------------------------
+    // Movie
+    //------------------------------------
+    #movie
+      .container
+        .row
+          .col-md-6.col-md-offset-3
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/PEOCj2eSNQs" frameborder="0" allowfullscreen style="width:100%")
 
     //------------------------------------
     // Informatin
@@ -99,84 +95,9 @@ html(lang='ja')
               href="https://twitter.com/cruel_reason"
               data-widget-id="721699534041026560"
               data-chrome="transparent"
-              data-height="450"
+              data-height="500"
+              data-width="600"
               )
-
-
-    //------------------------------------
-    // Member
-    //------------------------------------
-    #member
-      .container
-        .row
-          .col-md-12
-            h2.text-center Member
-        include _member
-
-
-    //------------------------------------
-    // Discography
-    //------------------------------------
-    #discography
-      .container
-        .row
-          .col-md-12
-            h2.text-center Discography
-        #disc.text-right
-          // ----- 夢幻泡影
-          .row.bottom10px
-            .col-md-4
-              a(href="./img/jacket/mugen_jacket.png" target="_blank")
-                img(src="./img/jacket/mugen_jacket_s.png")
-              h3 1st Mini Album
-                br
-                strong 夢幻泡影
-              br
-              p 1. ∞ / 2. Gimlet / 3. the season
-                br
-                | 4. 欠落少女 / 5. COLOR
-              br
-              ul(style="list-style:none")
-                li 商品番号 AZMF-3097
-                li 価格 2160円(税込)
-                li 発売元/販売元 有限会社ジェナイトミュージックファクトリー
-              br
-              p ライブ会場物販にて販売中
-            .col-md-7
-              iframe(scrolling="no" id="hearthis_at_track_1115459" width="100%" height="160" src="https://hearthis.at/embed/1115459/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency).bottom10px
-              iframe(scrolling="no" id="hearthis_at_track_1115458" width="100%" height="160" src="https://hearthis.at/embed/1115458/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency).bottom10px
-              iframe(scrolling="no" id="hearthis_at_track_1115457" width="100%" height="160" src="https://hearthis.at/embed/1115457/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency).bottom10px
-              iframe(scrolling="no" id="hearthis_at_track_1115461" width="100%" height="160" src="https://hearthis.at/embed/1115461/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency).bottom10px
-              iframe(scrolling="no" id="hearthis_at_track_1115460" width="100%" height="160" src="https://hearthis.at/embed/1115460/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency).bottom10px
-
-          .row.bottom10px
-            // -- COLOR
-            .col-md-3.col-md-offset-1
-              h3 1st demo CD
-                br
-                strong COLOR
-              u words:英人 / music:mao
-              p 在庫限り配布終了
-              a(href="./img/jacket/color_jacket.jpg")
-                img(src="./img/jacket/color_jacket_s.jpg")
-
-            // -- 欠落
-            .col-md-3
-              h3 2nd demo CD
-                br
-                strong 欠落少女
-              u words:英人 / music:うたまる
-              p ライブ会場で1円で販売中 (在庫限り)
-              a(href="./img/jacket/ketsuraku_jacket.jpg")
-                img(src="./img/jacket/ketsuraku_jacket_s.jpg")
-
-            // -- 配布season
-            .col-md-4
-              h3 1stワンマン限定demo CD
-                br
-                strong the season
-              u words:英人 / music:mao
-              p ※現在は配布していません
 
 
     //------------------------------------
@@ -201,6 +122,74 @@ html(lang='ja')
             a(href="https://form.jotform.me/60470680579463")
               p.text-center チケットのご予約はこちら
             p.text-center (別Windowが開きます)
+
+
+    //------------------------------------
+    // Discography
+    //------------------------------------
+    #discography
+      .container
+        .row
+          .col-md-12
+            h2.text-center Discography
+        #disc.text-right
+          // ----- 夢幻泡影
+          .row.bottom10px
+            .col-md-12
+          .row.bottom10px
+            .col-md-4.bottom10px
+              a(href="./img/jacket/mugen_jacket.png" target="_blank")
+                img(src="./img/jacket/mugen_jacket_s.png")
+              h3 1st Mini Album
+                br
+                strong 夢幻泡影
+              br
+              ul(style="list-style:none;font-size:12pt")
+                li 1. ∞
+                li 2. Gimlet
+                li 3. the season
+                li 4. 欠落少女
+                li 5. COLOR
+              a(href="https://hearthis.at/cruel-reason/set/52282-5015992/" style="color:red") 試聴(外部リンク)
+              br
+              br
+              ul(style="list-style:none")
+                li 商品番号 AZMF-3097
+                li 価格 2160円(税込)
+                li 発売元/販売元 有限会社ジェナイトミュージックファクトリー
+              br
+              p ライブ会場物販にて販売中
+
+            // -- COLOR
+            .col-md-4
+              a(href="./img/jacket/color_jacket.jpg")
+                img(src="./img/jacket/color_jacket_s.jpg")
+              h3 1st demo CD
+                br
+                strong COLOR
+              u words:英人 / music:mao
+              p 配布終了
+
+            // -- 欠落
+            .col-md-4
+              a(href="./img/jacket/ketsuraku_jacket.jpg")
+                img(src="./img/jacket/ketsuraku_jacket_s.jpg")
+              h3 2nd demo CD
+                br
+                strong 欠落少女
+              u words:英人 / music:うたまる
+              p ライブ会場で1円で販売中 (在庫限り)
+
+
+    //------------------------------------
+    // Member
+    //------------------------------------
+    #member
+      .container
+        .row
+          .col-md-12
+            h2.text-center Member
+        include _member
 
 
     //------------------------------------
@@ -229,23 +218,25 @@ html(lang='ja')
     #contact
       .container
         .row
-          .col-md-12
-            h2.text-center Contact
-            p.text-center お問い合わせ・ファンレター等の宛先
-            p.text-center 〒330-0063
+          .col-md-12.text-center
+            h2 Contact
+            h4 お問い合わせ・出演依頼・ファンレター等
+            p 〒330-0063
               br
               | 埼玉県さいたま市浦和区高砂2-1-5
               br
               | Zёnit Music Factory (ジェナイト・ミュージック・ファクトリー)
-            p.text-center
+            p
               | TEL：048-824-0647 (Live House Narciss)
               br
               | Mail:
               input.copyable(value="cruel-reason@zmf.co.jp")
               br
-            p.text-center 当ウェブサイトに関する内容は以下にお願いします
-              br
-              input.copyable(value="general@cruel-reason.net" style="color:#555; width:160px")
+        .row
+          .col-md-12.text-center
+            h4 当ウェブサイトに関する内容
+            p 下記メールアドレスにお願いします
+            input.copyable(value="general@cruel-reason.net" style="color:#555; width:160px")
 
 
     //------------------------------------
