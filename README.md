@@ -2,21 +2,33 @@
 概要
 --------------------
 
-* `cruel-reason.net` のソース
-* 面倒なのでmasterブランチのみの運用
+- masterブランチのみの運用
+- pushされると自動でデプロイします
 
 
 開発環境
 --------------------
 
+- タスクランナー `gulp`
+- コーディング `Pug` `Sass` `CoffeeScript`
+
+```bash
+# コンパイルするためにウォッチ
+$ cd your-work-directory/
+$ gulp
+
+# 実際いじるのは src/ 配下
+$ vim src/piyopiyo.pug
+```
+
 ### 初回 ###
 
-```
+```bash
 # 作業ディレクトリへ移動
 $ cd your-work-directory/
 
 # リポジトリをclone
-$ git clone https://github.com/maonyoro/cruel-reason.net.git
+$ git clone https://github.com/maonyoro/cr_official.git
 $ cd cruel-reason.net
 
 # 必要なモジュールやライブラリをインストール
