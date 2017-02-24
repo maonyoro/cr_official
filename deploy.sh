@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BUCKET="reasoncruel"
+BUCKET="cruel-reason.net"
 PUBLIC_DIR="public"
 
 if [ `grep AKIAIYWZJCF ~/.aws/credentials  | wc -l` -eq 1 ]; then
