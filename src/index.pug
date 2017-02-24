@@ -235,9 +235,12 @@ html(lang='ja')
               br
         .row
           .col-md-12.text-center
-            h4 当ウェブサイトに関する内容
-            p 下記メールアドレスにお願いします
-            input.copyable(value="general@cruel-reason.net" style="color:#555; width:160px")
+            h4 当ウェブサイト内容に関するお問い合わせ
+            input.copyable(value="cruel.reason.official[at]gmail.com" style="color:#555; width:160px")
+            p [at]をアットマークに置き換えて下さい。
+            p
+              a(href="https://twitter.com/cruel_reason") 公式Twitter
+              | へのDM, Reply等でも承ります。
 
 
     //------------------------------------
@@ -255,6 +258,17 @@ html(lang='ja')
 
 
     //------------------------------------
+    // Analytics
+    //------------------------------------
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-48994049-2', 'auto');
+      ga('send', 'pageview');
+
+    //------------------------------------
     // JS Library
     //------------------------------------
     script(type='text/javascript' src='lib/bootstrap-3.3.6-dist/js/bootstrap.min.js')
@@ -267,6 +281,4 @@ html(lang='ja')
       | !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
     // web fonts
-    link(href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet' type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Merriweather:900' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Eater|Merriweather|Noto+Sans' rel='stylesheet' type='text/css')
