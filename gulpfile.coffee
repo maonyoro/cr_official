@@ -5,7 +5,7 @@ coffee = require('gulp-coffee')
 webserver = require('gulp-webserver')
 
 # Default rule
-gulp.task 'default', ['pug','sass','coffee','watch']
+gulp.task 'default', ['pug','sass','coffee']
 
 # watch
 gulp.task 'watch', ->
