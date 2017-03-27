@@ -29,7 +29,7 @@ $ cd your-work-directory/
 
 # リポジトリをclone
 $ git clone https://github.com/maonyoro/cr_official.git
-$ cd cruel-reason.net
+$ cd cr_official.net
 
 # 必要なモジュールやライブラリをインストール
 $ npm install
