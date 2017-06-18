@@ -2,28 +2,26 @@
 body {
   font-family: 'Lato', -apple-system, ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif;
   font-weight: 400;
-  background-color: #FDFDFD;
-  color: #000; }
+  background-color: #111;
+  color: #fff; }
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: underline; }
 
 h1 {
   font-size: 24pt;
-  border-bottom: 1px solid #000; }
+  border-bottom: 1px solid #fff; }
 
 h2 {
   font-size: 20pt;
-  border-left: 5px solid #F00;
   padding-left: 5px; }
 
 h3 {
   color: #F00;
-  font-size: 18pt;
-  margin-left: 5px;
+  font-size: 17pt;
   margin-top: 25px; }
 
 h4 {
-  font-size: 16pt;
-  margin-left: 10px; }
+  font-size: 15pt;
+  margin-top: 40px; }
