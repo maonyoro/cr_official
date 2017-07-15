@@ -10,6 +10,7 @@ html(lang='ja')
     link(rel='stylesheet' href='lib/bootstrap-3.3.6-dist/css/bootstrap.min.css')
     link(rel='stylesheet' href='lib/slick-1.5.9/slick/slick.css')
     link(rel='stylesheet' href='lib/slick-1.5.9/slick/slick-theme.css')
+    link(rel='stylesheet' href='lib/lightbox2-master/dist/css/lightbox.min.css')
     //link(rel='stylesheet' href='lib/animate.css')
     script(type='text/javascript' src='lib/jquery-1.12.2.min.js')
     //-- 自前ソースは最後に読み込む
@@ -138,17 +139,17 @@ html(lang='ja')
           .col-md-12
             h2.text-center Discography
         #disc.text-right
-          // ----- 夢幻泡影
           .row.bottom10px
             .col-md-12
           .row.bottom10px
+
+            // ----- 夢幻泡影
             .col-md-5.bottom10px
-              a(href="./img/jacket/mugen_jacket.png" target="_blank")
+              a(href="./img/jacket/mugen_jacket.png" target="_blank" data-lightbox="mugen_jacket")
                 img(src="./img/jacket/mugen_jacket_s.png")
-              h3 1st Mini Album
+              h3.bottom10px 1st Mini Album
                 br
                 strong 夢幻泡影
-              br
               ul(style="list-style:none;font-size:12pt")
                 li 1. ∞
                 li 2. Gimlet
@@ -167,12 +168,11 @@ html(lang='ja')
 
             // ----- 狂深層目録
             .col-md-5.bottom10px
-              a(href="./img/jacket/2nd_jacket.png" target="_blank")
+              a(href="./img/jacket/2nd_jacket.png" target="_blank" data-lightbox="2nd_jacket")
                 img(src="./img/jacket/2nd_jacket_s.png")
-              h3 2nd Mini Album
+              h3.bottom10px 2nd Mini Album
                 br
                 strong 狂深層目録
-              br
               ul(style="list-style:none;font-size:12pt")
                 li 1. 虚絶
                 li 2. 心傷
@@ -281,6 +281,7 @@ html(lang='ja')
     script(type='text/javascript' src='lib/bootstrap-3.3.6-dist/js/bootstrap.min.js')
     script(type='text/javascript' src='lib/smooth-scroll-master/dist/js/smooth-scroll.min.js')
     script(type='text/javascript' src='lib/slick-1.5.9/slick/slick.min.js')
+    script(type='text/javascript' src='lib/lightbox2-master/dist/js/lightbox.min.js')
     script(type='text/javascript' src='./index.js')
 
     //- twitter widget
