@@ -5,6 +5,15 @@
         <a href="https://form.jotform.me/60470680579463" target="_blank" class="btn btn-info">チケットの予約はこちらから</a>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-12 mb-4">
+        <a :href="require('../assets/tamakan2017.jpg')" target="_blank">
+          <img src="../assets/tamakan2017thumb.jpg" class="w-50 mb-5">
+        </a>
+      </div>
+    </div>
+
     <div class="border-bottom text-left mb-4 " v-for="l in liveData" :key="l.date">
       <div class="row">
         <!-- とりあえずcol-12でベタッと -->
@@ -57,7 +66,7 @@ export default {
           start: '11:30',
           charge: { rsv: '4000', adv: '4800', drink: '500' },
           bands: ['CRUEL REASON 他'],
-          option: '<a href="#"><span>詳細はこちら</span><br><img src="https://placehold.jp/200x300.png"></a>'
+          option: ''
         },
         {
           date: '9/18(月・祝)',

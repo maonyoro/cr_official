@@ -1,8 +1,13 @@
 <template>
   <div id="app">
     <!-- ヘッダ -->
-    <nav class="navbar bg-faded fixed-top mb-3">
+    <nav class="navbar bg-faded sticky-top mb-3">
       <div class="container">
+        <div class="row text-left">
+          <div class="col-12 mt-1">
+            <h1 @click="select('hello')" v-if="current!=='hello'" class="clickable">CRUEL REASON Official Website</h1>
+          </div>
+        </div>
         <div class="row">
           <div class="col-3 clickable" @click="select('profile')" :class="{'selected': current==='profile'}">
             <icon name="user-circle" scale="1.5" class="mt-2"></icon>
@@ -25,11 +30,11 @@
     </nav>
   
     <div class="container contents">
+      <Hello v-if="current === 'hello'"></Hello>
       <Profile v-if="current === 'profile'"></Profile>
       <Live v-if="current === 'live'"></Live>
       <Media v-if="current === 'media'"></Media>
       <Info v-if="current === 'info'"></Info>
-      <!-- <Contact></Contact> -->
     </div>
   
   </div>
@@ -40,7 +45,6 @@ import Hello from './components/Hello'
 import Info from './components/Info'
 import Profile from './components/Profile'
 import Live from './components/Live'
-import Contact from './components/Contact'
 import Media from './components/Media'
 
 export default {
@@ -50,12 +54,11 @@ export default {
     Info,
     Profile,
     Live,
-    Media,
-    Contact
+    Media
   },
   data() {
     return {
-      current: 'profile'
+      current: 'hello'
     }
   },
   methods: {
@@ -73,6 +76,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .clickable {
@@ -87,10 +93,13 @@ export default {
 .selected {
   border-bottom: 2px solid #1da1f2
 }
-.contents {
+/* .contents {
   margin-top: 85px;
-}
+} */
 
+h1 {
+  font-size: 13px;
+}
 h3 {
   font-size: 24px;
 }

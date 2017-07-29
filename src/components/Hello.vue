@@ -1,51 +1,43 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+    <div class="row">
+      <div class="col-12">
+  
+        <h1>CRUEL REASON Official Website</h1>
+  
+        <!-- <slick ref="slick" :options="slickOptions"> -->
+        <img src="../assets/cruelreason2017.jpg" class="w-100 mb-5">
+        <a href="../assets/tamakan2017.jpg">
+          <img src="../assets/tamakan2017s.jpg" class="w-100 mb-5">
+        </a>
+        <!-- </slick> -->
+  
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'hello',
-  data () {
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
+    //   slickOptions: {
+    //     mobileFirst: true,
+    //     rows: 0,
+    //     dots: false,
+    //     infinite: true,
+    //     cssEase: 'ease-in',
+    //     accessibility: false,
+    //     speed: 600,
+    //     autoplay: true,
+    //     autoplaySpeed: 6500,
+    //     pauseOnHover: true,
+    //     swipe: true,
+    //     arrow: false,
+    //     prevArrow: '',
+    //     nextArrow: ''
+    //   }
     }
   }
 }
@@ -53,7 +45,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 

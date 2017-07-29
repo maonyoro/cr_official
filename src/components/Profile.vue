@@ -13,7 +13,7 @@
         <div class="col-9">
           <div class="profile-name">
             <h5>{{m.name}}
-              <span class="bold">@{{m.screen}}</span>
+              <span class="bold">@CRUEL_REASON</span>
             </h5>
           </div>
           <div class="profile-text">
@@ -27,7 +27,7 @@
             </p>
           </div>
           <!-- images -->
-          <div>
+          <div class="images">
             <lightbox :src="m.img1.img">
               <img :src="m.img1.thumb" alt="image1" class="w-45">
             </lightbox>
@@ -40,19 +40,21 @@
       <!-- social links -->
       <div class="row mt-3">
         <div class="col-2 offset-3">
-          <a :href="m.social.twitter">
+          <a :href="m.social.twitter" target="_blank">
             <icon name="twitter" scale="1"></icon>
           </a>
         </div>
         <div class="col-2">
-          <icon name="retweet" scale="1"></icon>
+          <b-tooltip content="RT?" triggers="click" debounce=0>
+            <icon name="retweet" scale="1"></icon>
+          </b-tooltip>
         </div>
         <div class="col-2" @click="like(m.screen)">
           <icon name="heart-o" scale="1" v-if="!liked[m.screen]"></icon>
           <icon name="heart" scale="1" class="red" v-else></icon>
         </div>
         <div class="col-2">
-          <icon name="envelope" scale="1"></icon>
+          <icon name="trophy" scale="1"></icon>
         </div>
       </div>
     </div>
@@ -74,14 +76,14 @@ export default {
           part: 'Vocal',
           birthday: '3/9',
           blood: 'O',
-          thumbnail: 'https://placehold.jp/150x150.png',
+          thumbnail: require('../assets/artist/hideto_thumb2017.jpg'),
           img1: {
-            img: 'https://placehold.jp/600x900.png',
-            thumb: 'https://placehold.jp/200x300.png'
+            img: require('../assets/artist/hideto2017_1.jpg'),
+            thumb: require('../assets/artist/hideto2017_1s.jpg')
           },
           img2: {
-            img: 'https://placehold.jp/600x900.png',
-            thumb: 'https://placehold.jp/200x300.png'
+            img: require('../assets/artist/hideto2017_2.jpg'),
+            thumb: require('../assets/artist/hideto2017_2.jpg')
           },
           social: {
             twitter: 'https://twitter.com/chidetor',
@@ -94,14 +96,14 @@ export default {
           part: 'Guitars',
           birthday: '5/4',
           blood: 'B',
-          thumbnail: 'https://placehold.jp/150x150.png',
+          thumbnail: require('../assets/artist/mao_thumb2017.jpg'),
           img1: {
-            img: 'https://placehold.jp/600x900.png',
-            thumb: 'https://placehold.jp/200x300.png'
+            img: require('../assets/artist/mao2017_1.jpg'),
+            thumb: require('../assets/artist/mao2017_1s.jpg')
           },
           img2: {
-            img: 'https://placehold.jp/600x900.png',
-            thumb: 'https://placehold.jp/200x300.png'
+            img: require('../assets/artist/mao2017_2.jpg'),
+            thumb: require('../assets/artist/mao2017_2.jpg')
           },
           social: {
             twitter: 'https://twitter.com/maonyoro',
@@ -114,14 +116,14 @@ export default {
           part: 'Drums',
           birthday: '2/13',
           blood: 'O',
-          thumbnail: 'https://placehold.jp/150x150.png',
+          thumbnail: require('../assets/artist/yuri_thumb2017.jpg'),
           img1: {
-            img: 'https://placehold.jp/600x900.png',
-            thumb: 'https://placehold.jp/200x300.png'
+            img: require('../assets/artist/yuri2017_1.jpg'),
+            thumb: require('../assets/artist/yuri2017_1s.jpg')
           },
           img2: {
-            img: 'https://placehold.jp/600x900.png',
-            thumb: 'https://placehold.jp/200x300.png'
+            img: require('../assets/artist/yuri2017_2.jpg'),
+            thumb: require('../assets/artist/yuri2017_2.jpg')
           },
           social: {
             twitter: 'https://twitter.com/tesroayuri',
@@ -170,6 +172,9 @@ a {
 
 .profile-text {
   font-size: 12px;
+}
+.images {
+  /* max-height: 300px; */
 }
 
 </style>
