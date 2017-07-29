@@ -8,10 +8,12 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 import VueLightbox from 'vue-lightbox'
+import Slick from 'vue-slick'
 
 Vue.use(BootstrapVue)
 Vue.component('icon', Icon)
 Vue.component('Lightbox', VueLightbox)
+Vue.component('Slick', Slick)
 
 Vue.config.productionTip = false
 
@@ -19,5 +21,5 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   template: '<App/>',
-  components: { App }
+  components: { App, Slick }
 })
