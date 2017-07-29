@@ -1,22 +1,36 @@
 <template>
   <div id="app">
-    <nav class="navbar bg-faded">
+    <!-- ヘッダ -->
+    <nav class="navbar bg-faded fixed-top mb-3">
       <div class="container">
         <div class="row">
-          <div class="col-3 clickable" @click="select('profile')">Profile</div>
-          <div class="col-3 clickable" @click="select('live')">Live</div>
-          <div class="col-3 clickable" @click="select('disc')">Disc</div>
-          <div class="col-3 clickable" @click="select('info')">Info</div>
+          <div class="col-3 clickable" @click="select('profile')" :class="{'selected': current==='profile'}">
+            <icon name="user-circle" scale="1.5" class="mt-2"></icon>
+            <small class="form-text text-muted mb-1">Profile</small>
+          </div>
+          <div class="col-3 clickable" @click="select('live')" :class="{'selected': current==='live'}">
+            <icon name="music" scale="1.5" class="mt-2"></icon>
+            <small class="form-text text-muted mb-1">Live</small>
+          </div>
+          <div class="col-3 clickable" @click="select('media')" :class="{'selected': current==='media'}">
+            <icon name="headphones" scale="1.5" class="mt-2"></icon>
+            <small class="form-text text-muted mb-1">Media</small>
+          </div>
+          <div class="col-3 clickable" @click="select('info')" :class="{'selected': current==='info'}">
+            <icon name="info" scale="1.5" class="mt-2"></icon>
+            <small class="form-text text-muted mb-1">Info</small>
+          </div>
         </div>
       </div>
     </nav>
-
-    <Profile v-if="current === 'profile'"></Profile>
-    <Live v-if="current === 'live'"></Live>
-    <Disc v-if="current === 'disc'"></Disc>
-    <Info v-if="current === 'info'"></Info>
-    <!-- <Contact></Contact> -->
   
+    <div class="container contents">
+      <Profile v-if="current === 'profile'"></Profile>
+      <Live v-if="current === 'live'"></Live>
+      <Media v-if="current === 'media'"></Media>
+      <Info v-if="current === 'info'"></Info>
+      <!-- <Contact></Contact> -->
+    </div>
   
   </div>
 </template>
@@ -27,7 +41,7 @@ import Info from './components/Info'
 import Profile from './components/Profile'
 import Live from './components/Live'
 import Contact from './components/Contact'
-import Disc from './components/Disc'
+import Media from './components/Media'
 
 export default {
   name: 'app',
@@ -36,7 +50,7 @@ export default {
     Info,
     Profile,
     Live,
-    Disc,
+    Media,
     Contact
   },
   data() {
@@ -60,7 +74,56 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
 .clickable {
-  cursor: pointer
+  cursor: pointer;
+}
+
+.no-pm {
+  padding: 0;
+  margin: 0;
+}
+
+.selected {
+  border-bottom: 2px solid #1da1f2
+}
+.contents {
+  margin-top: 85px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 17px;
+}
+h5 {
+  font-size: 15px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.red {
+  color: #FF0000;
+}
+.border-bottom {
+  border-bottom: 1px solid #cfcfcf;
+}
+
+/* override bootstrap */
+
+.navbar {
+  padding: 0;
+}
+
+.form-text {
+  margin-top: 0;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div class="disc">
-    <h1>disc</h1>
+  <div class="media">
+    <h1>media</h1>
   </div>
 </template>
 
