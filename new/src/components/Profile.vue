@@ -24,6 +24,9 @@
               <br>
               <span class="bold">BloodType:</span> {{m.blood}}
               <br>
+              <span class="bold">SocialLinks:</span><span class="ml-2"><a :href="m.social.twitter" target="_blank">
+                <icon name="twitter"></icon>Twitter
+              </a></span>
             </p>
           </div>
           <!-- images -->
@@ -40,21 +43,17 @@
       <!-- social links -->
       <div class="row mt-3">
         <div class="col-2 offset-3">
-          <a :href="m.social.twitter" target="_blank">
-            <icon name="twitter" scale="1"></icon>
-          </a>
+          <icon name="magic" scale="1"></icon>
         </div>
         <div class="col-2">
-          <b-tooltip content="RT?" triggers="click" debounce=0>
-            <icon name="retweet" scale="1"></icon>
-          </b-tooltip>
+          <icon name="retweet" scale="1"></icon>
         </div>
         <div class="col-2" @click="like(m.screen)">
           <icon name="heart-o" scale="1" v-if="!liked[m.screen]"></icon>
           <icon name="heart" scale="1" class="red" v-else></icon>
         </div>
         <div class="col-2">
-          <icon name="trophy" scale="1"></icon>
+          <icon name="hand-o-left" scale="1"></icon>
         </div>
       </div>
     </div>

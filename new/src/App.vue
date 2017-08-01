@@ -67,6 +67,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style>
@@ -110,6 +111,12 @@ h4 {
 h5 {
   font-size: 15px;
 }
+p {
+  font-size: 12px;
+}
+li {
+  font-size: 13px;
+}
 
 .bold {
   font-weight: bold;
@@ -117,6 +124,10 @@ h5 {
 
 .w-45 {
   width: 45%;
+}
+
+.w-60 {
+  width: 60%;
 }
 
 .red {

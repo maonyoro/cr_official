@@ -14,7 +14,7 @@
         <p class="text-center">件名
           <span class="text-danger">メルマガ希望</span>として
           <br>
-          <input @click="copyable($event)" value="cruel-reason@zmf.co.jp">
+          <input @click="copyable($event)" value="cruel-reason@zmf.co.jp" class="w-60 text-center">
           <br>に空メールを送信してください。
         </p>
         <p>メルマガは info@zmf.co.jp より配信されますので、受信できるようメール設定をご確認ください。</p>
@@ -51,6 +51,20 @@ export default {
     return {
     }
   },
+  beforeMount() {
+    /* eslint-disable wrap-iife */
+    /* eslint-disable one-var */
+    !function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        p = /^http:/.test(d.location) ? 'http' : 'https'
+      if (!d.getElementById(id)) {
+        js = d.createElement(s)
+        js.id = id
+        js.src = p + '://platform.twitter.com/widgets.js'
+        fjs.parentNode.insertBefore(js, fjs)
+      }
+    }(document, 'script', 'twitter-wjs')
+  },
   methods: {
     copyable(e) {
       return e.target.setSelectionRange(0, e.target.value.length)
@@ -58,18 +72,6 @@ export default {
   }
 }
 
-/* eslint-disable wrap-iife */
-/* eslint-disable one-var */
-!function (d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    p = /^http:/.test(d.location) ? 'http' : 'https'
-  if (!d.getElementById(id)) {
-    js = d.createElement(s)
-    js.id = id
-    js.src = p + '://platform.twitter.com/widgets.js'
-    fjs.parentNode.insertBefore(js, fjs)
-  }
-}(document, 'script', 'twitter-wjs')
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -93,7 +95,4 @@ a {
   color: #42b983;
 }
 
-p {
-  font-size: 13px;
-}
 </style>
