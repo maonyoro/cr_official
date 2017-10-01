@@ -13,22 +13,22 @@
         </div>
       </div>
     </div>
-  
+
     <!-- Movie -->
     <div class="row mt-3" v-show="isMovieSelected()">
       <div class="col-12">
         <!-- 2nd-->
         <h5 class="text-left">2ndミニアルバム「狂深層目録」プレビュー</h5>
-        <iframe width="320" height="240" src="https://www.youtube.com/embed/sZ21CWxQEQY" frameborder="0" allowfullscreen class="w-100 mb-5"></iframe>
+        <iframe width="320" height="320" src="https://www.youtube.com/embed/sZ21CWxQEQY" frameborder="0" allowfullscreen class="w-100 mb-5"></iframe>
         <!-- 1st-->
         <h5 class="text-left">1stミニアルバム「夢幻泡影」プレビュー</h5>
-        <iframe width="320" height="240" src="https://www.youtube.com/embed/PEOCj2eSNQs" frameborder="0" allowfullscreen class="w-100 mb-5"></iframe>
+        <iframe width="320" height="320" src="https://www.youtube.com/embed/PEOCj2eSNQs" frameborder="0" allowfullscreen class="w-100 mb-5"></iframe>
       </div>
     </div>
-  
+
     <!-- Discography -->
     <div class="mt-4" v-show="isDiscoSelected()">
-  
+
       <div id="2nd" class="mb-4">
         <div class="row">
           <div class="col-12 text-left mb-2">

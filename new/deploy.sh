@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BUCKET="new-cruel-reason"
+BUCKET="cruel-reason.net"
 PUBLIC_DIR="dist"
 
 if [ `grep IYWZJCF ~/.aws/credentials  | wc -l` -eq 1 ]; then

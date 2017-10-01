@@ -28,7 +28,7 @@
         </div>
       </div>
     </nav>
-  
+
     <div class="container contents">
       <Hello v-if="current === 'hello'"></Hello>
       <Profile v-if="current === 'profile'"></Profile>
@@ -36,7 +36,7 @@
       <Media v-if="current === 'media'"></Media>
       <Info v-if="current === 'info'"></Info>
     </div>
-  
+
   </div>
 </template>
 

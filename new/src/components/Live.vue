@@ -6,13 +6,13 @@
       </div>
     </div>
 
-    <div class="row">
+    <!-- div class="row">
       <div class="col-12 mb-4">
         <a :href="require('../assets/tamakan2017.jpg')" target="_blank">
           <img src="../assets/tamakan2017thumb.jpg" class="w-50 mb-5">
         </a>
       </div>
-    </div>
+    </div -->
 
     <div class="border-bottom text-left mb-4 " v-for="l in liveData" :key="l.date">
       <div class="row">
@@ -49,42 +49,42 @@ export default {
     return {
       liveData: [
         {
-          date: '8/6(日)',
-          place: '浦和Narciss',
-          title: '妖華乱舞',
-          open: '16:30',
-          start: '17:00',
-          charge: { rsv: '3000', adv: '3500', drink: '500' },
-          bands: ['CRUEL REASON', 'ROMiO.', 'RF', 'MAD Night', 'バレッタ', '眼鏡ギタァ', 'raith.'],
-          option: ''
-        },
-        {
-          date: '8/16(水)',
-          place: '埼玉会館 小ホール',
-          title: '浦和Narciss 35th Anniversary ~漆黒のシンフォニー~ at 埼玉会館ホール',
-          open: '11:00',
-          start: '11:30',
-          charge: { rsv: '4000', adv: '4800', drink: '500' },
-          bands: ['CRUEL REASON 他'],
-          option: ''
-        },
-        {
-          date: '9/18(月・祝)',
-          place: '浦和ナルシス',
-          title: 'Narciss 35th Anniversary ~漆黒のシンフォニー~',
-          open: '16:30',
-          start: '17:00',
-          charge: { rsv: '3200', adv: '3700', drink: '500' },
-          bands: ['CRUEL REASON', '[enver]brain', 'マルコ', 'More', 'ヒャクモノガタリ', 'GHAZAL'],
-          option: ''
-        },
-        {
           date: '10/9(月・祝)',
           place: '浦和ナルシス',
           title: '~漆黒のシンフォニー~ セッション大会',
+          open: '16:00',
+          start: '16:30',
+          charge: { rsv: '3200', adv: '3700', drink: '500' },
+          bands: ['CRUEL REASONセッション(Regenbogen)', 'ROMiO.セッション', 'DANGER☆GANGセッション', '[enver]brainセッション', 'Geomatriumセッション', '不魅弥セッション', 'トシ&希'],
+          option: ''
+        },
+        {
+          date: '10/22(土)',
+          place: '浦和ナルシス',
+          title: 'Narciss PRESENTS『Narciss 35th Anniversary ~漆黒のシンフォニー~』',
+          open: '16:00',
+          start: '16:30',
+          charge: { rsv: '3200', adv: '3700', drink: '500' },
+          bands: ['CRUEL REASON', '[enver]brain', 'Re;move', 'ツキ酔ノ戯レ言', 'マーブル', 'Faith.', '眼鏡ギタァ', 'Black Bullet'],
+          option: ''
+        },
+        {
+          date: '11/18(土)',
+          place: '浦和ナルシス',
+          title: 'タイトル未定',
           open: '未定',
           start: '未定',
-          charge: { rsv: '未定', adv: '未定', drink: '500' },
+          charge: { rsv: '-', adv: '-', drink: '500' },
+          bands: ['CRUEL REASON', 'and more...'],
+          option: ''
+        },
+        {
+          date: '12/12(火)',
+          place: '浦和ナルシス',
+          title: '師走で祭り！ナルシス祭り!!',
+          open: '未定',
+          start: '未定',
+          charge: { rsv: '-', adv: '-', drink: '500' },
           bands: ['CRUEL REASON', 'and more...'],
           option: ''
         }
