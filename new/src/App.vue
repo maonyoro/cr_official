@@ -2,7 +2,7 @@
   <div id="app">
     <!-- ヘッダ -->
     <nav class="navbar bg-faded sticky-top mb-3">
-      <div class="container">
+      <div class="container head-container">
         <div class="row text-left">
           <div class="col-12 mt-1">
             <h1 @click="select('hello')" v-if="current!=='hello'" class="clickable">CRUEL REASON Official Website</h1>
@@ -145,5 +145,9 @@ li {
 
 .form-text {
   margin-top: 0;
+}
+.head-container {
+  margin-left: 0;
+  margin-right: 0;
 }
 </style>
