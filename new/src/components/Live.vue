@@ -49,29 +49,19 @@ export default {
     return {
       liveData: [
         {
-          date: '10/9(月・祝)',
-          place: '浦和ナルシス',
-          title: '~漆黒のシンフォニー~ セッション大会',
-          open: '16:00',
-          start: '16:30',
-          charge: { rsv: '3200', adv: '3700', drink: '500' },
-          bands: ['CRUEL REASONセッション(Regenbogen)', 'ROMiO.セッション', 'DANGER☆GANGセッション', '[enver]brainセッション', 'Geomatriumセッション', '不魅弥セッション', 'トシ&希'],
-          option: ''
-        },
-        {
-          date: '10/22(土)',
-          place: '浦和ナルシス',
-          title: 'Narciss PRESENTS『Narciss 35th Anniversary ~漆黒のシンフォニー~』',
-          open: '16:00',
-          start: '16:30',
-          charge: { rsv: '3200', adv: '3700', drink: '500' },
-          bands: ['CRUEL REASON', '[enver]brain', 'Re;move', 'ツキ酔ノ戯レ言', 'マーブル', 'Faith.', '眼鏡ギタァ', 'Black Bullet'],
-          option: ''
-        },
-        {
           date: '11/18(土)',
           place: '浦和ナルシス',
-          title: 'タイトル未定',
+          title: '華洛逍遥～CRUEL REASON 1st Chapter CD「Advancement…」Release～',
+          open: '15:30',
+          start: '16:00',
+          charge: { rsv: '3200', adv: '3700', drink: '500' },
+          bands: ['CRUEL REASON(45分)', 'Geomatrium(35分)', 'ugly betty\'s paranoia(35分)', 'G.S.I', 'the sexual damage', '勇†気', '和ロックバンド輝夜-kaguya-'],
+          option: '<h5 class="bold">その他</h5><ul><li>新譜「Advancement…」含め物販で4,000円以上ご購入頂いた方は、当日終演後の2ショット/4ショットスマホ撮影会に参加頂けます。</li></ul>'
+        },
+        {
+          date: '12/12(火)',
+          place: '浦和ナルシス',
+          title: '師走で祭り！ナルシス祭り!!',
           open: '未定',
           start: '未定',
           charge: { rsv: '-', adv: '-', drink: '500' },
@@ -79,9 +69,19 @@ export default {
           option: ''
         },
         {
-          date: '12/12(火)',
+          date: '12/29(金)',
           place: '浦和ナルシス',
-          title: '師走で祭り！ナルシス祭り!!',
+          title: 'Narciss PRESENTS『Narciss 35th Anniversary ～漆黒のシンフォニー～ 2017 FINAL』',
+          open: '未定',
+          start: '未定',
+          charge: { rsv: '-', adv: '-', drink: '500' },
+          bands: ['CRUEL REASON', 'and more...'],
+          option: ''
+        },
+        {
+          date: '1/6(土)',
+          place: '浦和ナルシス',
+          title: '未定',
           open: '未定',
           start: '未定',
           charge: { rsv: '-', adv: '-', drink: '500' },
