@@ -49,39 +49,65 @@ export default {
     return {
       liveData: [
         {
-          date: '11/18(土)',
-          place: '浦和ナルシス',
-          title: '華洛逍遥～CRUEL REASON 1st Chapter CD「Advancement…」Release～',
-          open: '15:30',
-          start: '16:00',
-          charge: { rsv: '3200', adv: '3700', drink: '500' },
-          bands: ['CRUEL REASON(45分)', 'Geomatrium(35分)', 'ugly betty\'s paranoia(35分)', 'G.S.I', 'the sexual damage', '勇†気', '和ロックバンド輝夜-kaguya-'],
-          option: '<h5 class="bold">その他</h5><ul><li>新譜「Advancement…」含め物販で4,000円以上ご購入頂いた方は、当日終演後の2ショット/4ショットスマホ撮影会に参加頂けます。</li></ul>'
-        },
-        {
           date: '12/12(火)',
           place: '浦和ナルシス',
           title: '師走で祭り！ナルシス祭り!!',
-          open: '未定',
-          start: '未定',
-          charge: { rsv: '-', adv: '-', drink: '500' },
-          bands: ['CRUEL REASON', 'and more...'],
-          option: ''
+          open: '16:30',
+          start: '17:00',
+          charge: { rsv: '3000', adv: '3500', drink: '500' },
+          bands: [
+            'CRUEL REASON',
+            '[enver]brain',
+            'raison d\'etre【K】',
+            'ガンミ',
+            '勇†気',
+            'CHEVEUX',
+            'and more...'
+          ],
+          option: '<p>ソフトドリンク飲み放題</p>'
         },
         {
           date: '12/29(金)',
           place: '浦和ナルシス',
           title: 'Narciss PRESENTS『Narciss 35th Anniversary ～漆黒のシンフォニー～ 2017 FINAL』',
-          open: '未定',
-          start: '未定',
-          charge: { rsv: '-', adv: '-', drink: '500' },
-          bands: ['CRUEL REASON', 'and more...'],
+          open: '16:30',
+          start: '17:00',
+          charge: { rsv: '3300', adv: '3800', drink: '500' },
+          bands: [
+            'CRUEL REASON',
+            'DANGER☆GANG',
+            'UNITED MONSTERS',
+            'THE NOSTRADAMNZ',
+            'Ageha',
+            'マーブル',
+            '404'
+          ],
           option: ''
         },
         {
           date: '1/6(土)',
           place: '浦和ナルシス',
           title: '未定',
+          open: '未定',
+          start: '未定',
+          charge: { rsv: '-', adv: '-', drink: '500' },
+          bands: ['CRUEL REASON', 'and more...'],
+          option: ''
+        },
+        {
+          date: '1/20(土)',
+          place: '池袋CYBER',
+          title: '未定',
+          open: '未定',
+          start: '未定',
+          charge: { rsv: '-', adv: '-', drink: '500' },
+          bands: ['CRUEL REASON', 'and more...'],
+          option: ''
+        },
+        {
+          date: '2/11(日)',
+          place: '浦和ナルシス',
+          title: '-yuri Birthday-',
           open: '未定',
           start: '未定',
           charge: { rsv: '-', adv: '-', drink: '500' },
