@@ -5,7 +5,9 @@
       <div class="container">
         <div class="row text-left">
           <div class="col-12 mt-1">
-            <h1 @click="select('hello')" v-if="current!=='hello'" class="clickable">CRUEL REASON Official Website</h1>
+            <h1 @click="select('hello')" v-if="current!=='hello'" class="clickable">
+              <icon name="arrow-circle-left" class="mr-2"></icon>
+              CRUEL REASON Official Website</h1>
           </div>
         </div>
         <div class="row">
@@ -61,6 +63,9 @@ export default {
       current: 'hello'
     }
   },
+  beforeMount() {
+    this.$ga.page('/')
+  },
   methods: {
     select(target) {
       this.current = target
@@ -94,6 +99,8 @@ export default {
 .selected {
   border-bottom: 2px solid #1da1f2
 }
+
+
 /* .contents {
   margin-top: 85px;
 } */
@@ -101,6 +108,7 @@ export default {
 h1 {
   font-size: 13px;
 }
+
 h3 {
   font-size: 24px;
 }
@@ -108,12 +116,15 @@ h3 {
 h4 {
   font-size: 17px;
 }
+
 h5 {
   font-size: 15px;
 }
+
 p {
   font-size: 12px;
 }
+
 li {
   font-size: 13px;
 }
@@ -133,9 +144,11 @@ li {
 .red {
   color: #FF0000;
 }
+
 .border-bottom {
   border-bottom: 1px solid #cfcfcf;
 }
+
 
 /* override bootstrap */
 

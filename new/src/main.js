@@ -9,11 +9,15 @@ import Icon from 'vue-awesome/components/Icon'
 import VueLightbox from 'vue-lightbox'
 import Slick from 'vue-slick'
 import App from './App'
+import VueAnalytics from 'vue-analytics'
 
 Vue.use(BootstrapVue)
 Vue.component('icon', Icon)
 Vue.component('Lightbox', VueLightbox)
 Vue.component('Slick', Slick)
+Vue.use(VueAnalytics, {
+  id: 'UA-48994049-2'
+})
 
 Vue.config.productionTip = false
 
