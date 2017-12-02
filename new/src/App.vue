@@ -2,7 +2,7 @@
   <div id="app">
     <!-- ヘッダ -->
     <nav class="navbar bg-faded sticky-top mb-3">
-      <div class="container">
+      <div class="container head-container">
         <div class="row text-left">
           <div class="col-12 mt-1">
             <h1 @click="select('hello')" v-if="current!=='hello'" class="clickable">
@@ -30,7 +30,7 @@
         </div>
       </div>
     </nav>
-  
+
     <div class="container contents">
       <Hello v-if="current === 'hello'"></Hello>
       <Profile v-if="current === 'profile'"></Profile>
@@ -38,7 +38,7 @@
       <Media v-if="current === 'media'"></Media>
       <Info v-if="current === 'info'"></Info>
     </div>
-  
+
   </div>
 </template>
 
@@ -158,5 +158,9 @@ li {
 
 .form-text {
   margin-top: 0;
+}
+.head-container {
+  margin-left: 0;
+  margin-right: 0;
 }
 </style>

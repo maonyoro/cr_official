@@ -6,13 +6,13 @@
       </div>
     </div>
 
-    <div class="row">
+    <!-- div class="row">
       <div class="col-12 mb-4">
         <a :href="require('../assets/tamakan2017.jpg')" target="_blank">
           <img src="../assets/tamakan2017thumb.jpg" class="w-50 mb-5">
         </a>
       </div>
-    </div>
+    </div -->
 
     <div class="border-bottom text-left mb-4 " v-for="l in liveData" :key="l.date">
       <div class="row">
@@ -49,42 +49,68 @@ export default {
     return {
       liveData: [
         {
-          date: '8/6(日)',
-          place: '浦和Narciss',
-          title: '妖華乱舞',
+          date: '12/12(火)',
+          place: '浦和ナルシス',
+          title: '師走で祭り！ナルシス祭り!!',
           open: '16:30',
           start: '17:00',
           charge: { rsv: '3000', adv: '3500', drink: '500' },
-          bands: ['CRUEL REASON', 'ROMiO.', 'RF', 'MAD Night', 'バレッタ', '眼鏡ギタァ', 'raith.'],
-          option: ''
+          bands: [
+            'CRUEL REASON',
+            '[enver]brain',
+            'raison d\'etre【K】',
+            'ガンミ',
+            '勇†気',
+            'CHEVEUX',
+            'and more...'
+          ],
+          option: '<p>ソフトドリンク飲み放題</p>'
         },
         {
-          date: '8/16(水)',
-          place: '埼玉会館 小ホール',
-          title: '浦和Narciss 35th Anniversary ~漆黒のシンフォニー~ at 埼玉会館ホール',
-          open: '11:00',
-          start: '11:30',
-          charge: { rsv: '4000', adv: '4800', drink: '500' },
-          bands: ['CRUEL REASON 他'],
-          option: ''
-        },
-        {
-          date: '9/18(月・祝)',
+          date: '12/29(金)',
           place: '浦和ナルシス',
-          title: 'Narciss 35th Anniversary ~漆黒のシンフォニー~',
+          title: 'Narciss PRESENTS『Narciss 35th Anniversary ～漆黒のシンフォニー～ 2017 FINAL』',
           open: '16:30',
           start: '17:00',
-          charge: { rsv: '3200', adv: '3700', drink: '500' },
-          bands: ['CRUEL REASON', '[enver]brain', 'マルコ', 'More', 'ヒャクモノガタリ', 'GHAZAL'],
+          charge: { rsv: '3300', adv: '3800', drink: '500' },
+          bands: [
+            'CRUEL REASON',
+            'DANGER☆GANG',
+            'UNITED MONSTERS',
+            'THE NOSTRADAMNZ',
+            'Ageha',
+            'マーブル',
+            '404'
+          ],
           option: ''
         },
         {
-          date: '10/9(月・祝)',
+          date: '1/6(土)',
           place: '浦和ナルシス',
-          title: '~漆黒のシンフォニー~ セッション大会',
+          title: '未定',
           open: '未定',
           start: '未定',
-          charge: { rsv: '未定', adv: '未定', drink: '500' },
+          charge: { rsv: '-', adv: '-', drink: '500' },
+          bands: ['CRUEL REASON', 'and more...'],
+          option: ''
+        },
+        {
+          date: '1/20(土)',
+          place: '池袋CYBER',
+          title: '未定',
+          open: '未定',
+          start: '未定',
+          charge: { rsv: '-', adv: '-', drink: '500' },
+          bands: ['CRUEL REASON', 'and more...'],
+          option: ''
+        },
+        {
+          date: '2/11(日)',
+          place: '浦和ナルシス',
+          title: '-yuri Birthday-',
+          open: '未定',
+          start: '未定',
+          charge: { rsv: '-', adv: '-', drink: '500' },
           bands: ['CRUEL REASON', 'and more...'],
           option: ''
         }

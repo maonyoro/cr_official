@@ -12,9 +12,7 @@
         <!-- profile text -->
         <div class="col-9">
           <div class="profile-name">
-            <h5>{{m.name}}
-              <span class="bold">@CRUEL_REASON</span>
-            </h5>
+            <h4>{{m.name}}</h4>
           </div>
           <div class="profile-text">
             <p>
@@ -30,7 +28,7 @@
             </p>
           </div>
           <!-- images -->
-          <div class="images">
+          <div class="images mb-2">
             <lightbox :src="m.img1.img">
               <img :src="m.img1.thumb" alt="image1" class="w-45">
             </lightbox>
@@ -41,7 +39,7 @@
         </div>
       </div>
       <!-- social links -->
-      <div class="row mt-3">
+      <!-- div class="row mt-3">
         <div class="col-2 offset-3">
           <icon name="magic" scale="1"></icon>
         </div>
@@ -55,7 +53,7 @@
         <div class="col-2">
           <icon name="hand-o-left" scale="1"></icon>
         </div>
-      </div>
+      </div -->
     </div>
   </div>
 </template>
@@ -66,7 +64,6 @@ export default {
   data() {
     return {
       liked: { 'hideto': false, 'mao': false, 'yuri': false },
-      msg: 'Welcome to Your Vue.js App',
 
       memberData: [
         {

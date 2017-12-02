@@ -2,16 +2,16 @@
   <div class="hello">
     <div class="row">
       <div class="col-12">
-  
+
         <h1>CRUEL REASON Official Website</h1>
-  
+
         <!-- <slick ref="slick" :options="slickOptions"> -->
         <img src="../assets/cruelreason2017.jpg" class="w-100 mb-5">
-        <a href="../assets/tamakan2017.jpg">
+        <!-- a href="../assets/tamakan2017.jpg">
           <img src="../assets/tamakan2017s.jpg" class="w-100 mb-5">
-        </a>
+        </a -->
         <!-- </slick> -->
-  
+
       </div>
     </div>
   </div>

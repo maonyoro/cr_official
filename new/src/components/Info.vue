@@ -51,7 +51,7 @@ export default {
     return {
     }
   },
-  beforeMount() {
+  mounted() {
     /* eslint-disable wrap-iife */
     /* eslint-disable one-var */
     !function (d, s, id) {
