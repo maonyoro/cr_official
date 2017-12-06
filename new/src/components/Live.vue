@@ -52,8 +52,8 @@ export default {
           date: '12/12(火)',
           place: '浦和ナルシス',
           title: '師走で祭り！ナルシス祭り!!',
-          open: '16:30',
-          start: '17:00',
+          open: '17:00',
+          start: '17:30',
           charge: { rsv: '3000', adv: '3500', drink: '500' },
           bands: [
             'CRUEL REASON',
@@ -61,8 +61,7 @@ export default {
             'raison d\'etre【K】',
             'ガンミ',
             '勇†気',
-            'CHEVEUX',
-            'and more...'
+            'CHEVEUX'
           ],
           option: '<p>ソフトドリンク飲み放題</p>'
         },
