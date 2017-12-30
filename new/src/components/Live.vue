@@ -49,64 +49,39 @@ export default {
     return {
       liveData: [
         {
-          date: '12/12(火)',
-          place: '浦和ナルシス',
-          title: '師走で祭り！ナルシス祭り!!',
-          open: '17:00',
-          start: '17:30',
-          charge: { rsv: '3000', adv: '3500', drink: '500' },
-          bands: [
-            'CRUEL REASON',
-            '[enver]brain',
-            'raison d\'etre【K】',
-            'ガンミ',
-            '勇†気',
-            'CHEVEUX'
-          ],
-          option: '<p>ソフトドリンク飲み放題</p>'
-        },
-        {
-          date: '12/29(金)',
-          place: '浦和ナルシス',
-          title: 'Narciss PRESENTS『Narciss 35th Anniversary ～漆黒のシンフォニー～ 2017 FINAL』',
-          open: '16:30',
-          start: '17:00',
-          charge: { rsv: '3300', adv: '3800', drink: '500' },
-          bands: [
-            'CRUEL REASON',
-            'DANGER☆GANG',
-            'UNITED MONSTERS',
-            'THE NOSTRADAMNZ',
-            'Ageha',
-            'マーブル',
-            '404'
-          ],
-          option: ''
-        },
-        {
           date: '1/6(土)',
           place: '浦和ナルシス',
-          title: '未定',
-          open: '未定',
-          start: '未定',
-          charge: { rsv: '-', adv: '-', drink: '500' },
-          bands: ['CRUEL REASON', 'and more...'],
+          title: '～漆黒のシンフォニー～2018',
+          open: '17:00',
+          start: '17:30',
+          charge: { rsv: '3200', adv: '3700', drink: '500' },
+          bands: ['CRUEL REASON', 'Geomatrium', 'マーブル', '白夢', '勇†気セッション'],
           option: ''
         },
         {
           date: '1/20(土)',
           place: '池袋CYBER',
-          title: '未定',
-          open: '未定',
-          start: '未定',
-          charge: { rsv: '-', adv: '-', drink: '500' },
-          bands: ['CRUEL REASON', 'and more...'],
-          option: ''
+          title: 'LuLu主催 『隆佑医師BD記念祭 Ryu-suke Rock Festival 2018～Rebirth～』',
+          open: '16:00',
+          start: '16:30',
+          charge: { rsv: '3500', adv: '4000', drink: '600' },
+          bands: ['CRUEL REASON', 'LuLu', 'La\'veil MizeriA', 'G.S.I', '変態集団AnimA', 'CRISIS', 'SARRMATH', 'LOVE TRAP'],
+          option: '<p>【チケット発売中】<br>[A] 池袋CYBER店頭販売(A1～A50 シャッフル、A51～整理番号順) ※1人3枚まで / [B] バンド予約</p>'
         },
         {
           date: '2/11(日)',
           place: '浦和ナルシス',
-          title: '-yuri Birthday-',
+          title: 'Unlimited colors～CRUEL REASON yuri Birthday～',
+          open: '16:30',
+          start: '17:00',
+          charge: { rsv: '3000', adv: '3500', drink: '500' },
+          bands: ['CRUEL REASON', 'and more...'],
+          option: ''
+        },
+        {
+          date: '3/10(土)',
+          place: '浦和ナルシス',
+          title: '英人Birthday',
           open: '未定',
           start: '未定',
           charge: { rsv: '-', adv: '-', drink: '500' },
