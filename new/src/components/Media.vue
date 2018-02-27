@@ -52,8 +52,11 @@
               <li>étoile</li>
             </ol>
           </div>
-          <div class="col-7">
+          <!--div class="col-7">
             <iframe scrolling="no" id="hearthis_at_user_81344-5015992" width="100%" height="350" src="https://hearthis.at/set/81344-5015992/embed/" frameborder="0" allowtransparency></iframe>
+          </div-->
+          <div class="col-7">
+            <iframe style="border: 0; width: 400px; height: 340px;" src="https://bandcamp.com/EmbeddedPlayer/album=616200324/size=large/bgcol=333333/linkcol=e32c14/artwork=small/transparent=true/" seamless><a href="http://cruel-reason.bandcamp.com/album/advancement">Advancement… by CRUEL REASON</a></iframe>
           </div>
         </div>
         <div class="row">
