@@ -49,72 +49,34 @@ export default {
     return {
       liveData: [
         {
-          date: '3/10(土)',
-          place: '浦和ナルシス',
-          title: 'Unlimited colors ～CRUEL REASON 英人 Birthday～',
-          open: '17:00',
-          start: '17:30',
-          charge: { rsv: '3000', adv: '3500', drink: '500' },
-          bands: [
-            'CRUEL REASON',
-            'DANGER☆GANG',
-            'Abyss',
-            'Black Bullet',
-            '月影先生(from Heretique Aventure)',
-            'シークレットバンド'
-          ],
-          option: ''
-        },
-        {
-          date: '3/31(土) ※maoセッション「浦和鋼鉄同好会」出演',
-          place: '浦和ナルシス',
-          title: '桜華爛漫',
-          open: '17:00',
-          start: '17:30',
-          charge: { rsv: '3000', adv: '3500', drink: '500' },
-          bands: [
-            '浦和鋼鉄同好会 [Vo.Kiri／Gt.mao／Gt.GENTARO(ReWilD)／Ba.悠(Geomatrium)／Dr.樹]',
-            'ROMiO.',
-            'コインロッカーベイビー(ズ)',
-            'プラチナ',
-            '変態集団AnimA'
-          ],
-          option: '※CRUEL REASONの出演はございません'
-        },
-        {
-          date: '4/15(日)',
-          place: '浦和ナルシス',
-          title: '未定',
-          open: '未定',
-          start: '未定',
-          charge: { rsv: '-', adv: '-', drink: '500' },
-          bands: ['CRUEL REASON', 'and more...'],
-          option: ''
-        },
-        {
-          date: '5/4(祝)',
-          place: '浦和ナルシス',
-          title: 'mao Birthday live',
-          open: '未定',
-          start: '未定',
-          charge: { rsv: '-', adv: '-', drink: '500' },
-          bands: ['CRUEL REASON', 'and more...'],
-          option: ''
-        },
-        {
           date: '6/3(日)',
           place: '浦和ナルシス',
           title: 'Zёnit Music Factory PRESENTS『ジェナイト祭り』',
-          open: '未定',
-          start: '未定',
-          charge: { rsv: '-', adv: '-', drink: '500' },
+          open: '15:30',
+          start: '16:00',
+          charge: { rsv: '3500', adv: '4000', drink: '500' },
           bands: [
             'CRUEL REASON',
             'DANGER☆GANG',
             '[enver]brain',
             'Geomatrium',
+            'the sexual damage',
             'RF',
-            'ROMiO.'
+            'ROMiO.',
+            'トシ＆希'
+          ],
+          option: '<p>来場者プレゼントあり！</p>'
+        },
+        {
+          date: '7/22(日)',
+          place: '浦和ナルシス',
+          title: 'Unlimited colors',
+          open: '17:00',
+          start: '17/30',
+          charge: { rsv: '3000', adv: '3500', drink: '500' },
+          bands: [
+            'CRUEL REASON',
+            'and more...'
           ],
           option: ''
         }
