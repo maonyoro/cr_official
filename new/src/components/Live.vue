@@ -48,38 +48,25 @@ export default {
   data() {
     return {
       liveData: [
-        {
-          date: '6/3(日)',
-          place: '浦和ナルシス',
-          title: 'Zёnit Music Factory PRESENTS『ジェナイト祭り』',
-          open: '15:30',
-          start: '16:00',
-          charge: { rsv: '3500', adv: '4000', drink: '500' },
-          bands: [
-            'CRUEL REASON',
-            'DANGER☆GANG',
-            '[enver]brain',
-            'Geomatrium',
-            'the sexual damage',
-            'RF',
-            'ROMiO.',
-            'トシ＆希'
-          ],
-          option: '<p>来場者プレゼントあり！</p>'
-        },
-        {
-          date: '7/22(日)',
-          place: '浦和ナルシス',
-          title: 'Unlimited colors',
-          open: '17:00',
-          start: '17/30',
-          charge: { rsv: '3000', adv: '3500', drink: '500' },
-          bands: [
-            'CRUEL REASON',
-            'and more...'
-          ],
-          option: ''
-        }
+        // {
+        //   date: '6/3(日)',
+        //   place: '浦和ナルシス',
+        //   title: 'Zёnit Music Factory PRESENTS『ジェナイト祭り』',
+        //   open: '15:30',
+        //   start: '16:00',
+        //   charge: { rsv: '3500', adv: '4000', drink: '500' },
+        //   bands: [
+        //     'CRUEL REASON',
+        //     'DANGER☆GANG',
+        //     '[enver]brain',
+        //     'Geomatrium',
+        //     'the sexual damage',
+        //     'RF',
+        //     'ROMiO.',
+        //     'トシ＆希'
+        //   ],
+        //   option: '<p>来場者プレゼントあり！</p>'
+        // },
       ]
 
     }
